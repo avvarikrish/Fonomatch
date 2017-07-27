@@ -48,7 +48,6 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="continue2DisplaySize:" destination="Yaz-fa-Jz9" eventType="touchUpInside" id="21b-UA-tDo"/>
-                                    <segue destination="cVr-wF-dKo" kind="show" id="p4b-Te-SMi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Min Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiG-ld-I60">
@@ -117,6 +116,7 @@
                         <outlet property="maxSizeSliderLabel" destination="Whe-nh-pVt" id="55R-B7-5tc"/>
                         <outlet property="sizeRange" destination="vVo-m2-dqg" id="hgN-lK-qX8"/>
                         <outlet property="sliderLabel" destination="EDg-hd-7Me" id="xjY-Bl-B9u"/>
+                        <segue destination="cVr-wF-dKo" kind="show" identifier="segueToDates" id="eM3-jF-ONv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spU-LN-gsO" userLabel="First Responder" sceneMemberID="firstResponder"/>

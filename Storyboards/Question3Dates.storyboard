@@ -39,15 +39,6 @@
                                     <outlet property="delegate" destination="VsX-dj-T82" id="r8x-8J-Eqk"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-xy-1Ln">
-                                <rect key="frame" x="148" y="552" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Continue"/>
-                                <connections>
-                                    <action selector="continueToQ4Button:" destination="VsX-dj-T82" eventType="touchUpInside" id="uua-NJ-EgN"/>
-                                    <segue destination="JC3-aU-eYV" kind="show" id="GVd-iM-JQx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 3: Indicate the earliest year (not done yet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG4-00-beh">
                                 <rect key="frame" x="-87" y="157" width="550" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,6 +53,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n2-wK-dTC">
+                                <rect key="frame" x="164" y="559" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="continue3Button:" destination="VsX-dj-T82" eventType="touchUpInside" id="5CD-NU-38Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -69,6 +68,7 @@
                         <outlet property="datePickerView" destination="Yxu-gT-xrF" id="lQM-bF-jkU"/>
                         <outlet property="dateTextField" destination="08f-Tm-fLN" id="sRu-h4-Ikv"/>
                         <outlet property="matchingDevices2" destination="Pe6-W4-43e" id="cin-Ti-Pzd"/>
+                        <segue destination="JC3-aU-eYV" kind="show" identifier="segueToTalkTime" id="gaG-nw-ihn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D15-I7-pHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
