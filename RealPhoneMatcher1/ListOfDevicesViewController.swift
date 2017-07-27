@@ -14,7 +14,7 @@ class ListOfDevicesTableViewController : UITableViewController {
     var realDevices5: [JSON] = []
         override func viewDidLoad() {
         super.viewDidLoad()
-
+            print (realDevices5.count)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

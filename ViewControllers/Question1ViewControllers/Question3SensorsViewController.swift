@@ -27,7 +27,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         print (realDevices3)
-        matchingDevices2.text = String (realDevices3.count)
+        matchingDevices2.text = String (realDevices3.count) + " devices"
         // Do any additional setup after loading the view.
     }
 

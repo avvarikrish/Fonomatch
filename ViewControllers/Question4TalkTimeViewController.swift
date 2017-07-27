@@ -14,14 +14,14 @@ class Question4TalkTimeViewController: UIViewController {
     var talkTimeValue = ""
     var talkTimeDevicesArray: [String] = []
     var realTalkTimeDevicesArray: [String] = []
-    var realDevices5: JSON = []
     var realDevices4: [JSON] = []
     @IBOutlet weak var talkTimeSlider: UISlider!
     @IBOutlet weak var talkTimeLabel: UILabel!
     @IBOutlet weak var matchingPhones3: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        matchingPhones3.text = String(realDevices4.count)
+        matchingPhones3.text = String(realDevices4.count) + " devices"
+
         // Do any additional setup after loading the view.
     }
 
