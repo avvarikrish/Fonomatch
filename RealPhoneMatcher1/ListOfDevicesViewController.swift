@@ -11,10 +11,11 @@ import SwiftyJSON
 import Alamofire
 
 class ListOfDevicesTableViewController : UITableViewController {
+    var deviceLabel: String = ""
     var realDevices5: [JSON] = []
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-            print (realDevices5.count)
+        print (realDevices5.count)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,36 +33,39 @@ class ListOfDevicesTableViewController : UITableViewController {
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        deviceLabel = realDevices5[indexPath.row]["DeviceName"].stringValue
+        print (deviceLabel)
         // Segue to the second view controller
         self.performSegue(withIdentifier: "segueToProperties", sender: self)
-    }
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        // get a reference to the second view controller
-        let secondViewController = segue.destination as! TestViewController
-        
-        // set a variable in the second view controller with the data to pass
-        secondViewController.receivedData = "hello"
     }
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-//        let destination = TestViewController() 
-//        navigationController?.pushViewController(destination, animated: true)
-//        let row = indexPath.row
-//        
-//    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // get a reference to the second view controller
+        if segue.identifier == "segueToProperties" {
+            if let sixthViewController = segue.destination as? TestViewController {
+                // set a variable in the second view controller with the data to pass
+                sixthViewController.testLabel.text = deviceLabel
+            }
+        }
     }
-    */
-
+        //    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //
+        //        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        //        let destination = TestViewController()
+        //        navigationController?.pushViewController(destination, animated: true)
+        //        let row = indexPath.row
+        //
+        //    }
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destinationViewController.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
 }
