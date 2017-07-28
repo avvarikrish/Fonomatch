@@ -55,6 +55,9 @@ class Question2ViewController: UIViewController {
         print ("\(userSizeValue) - \(userMaxSizeValue)")
         self.performSegue(withIdentifier: "segueToDates", sender: self)
     }
+    @IBAction func viewDevices1(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueToList", sender: self)
+    }
     override func viewDidLayoutSubviews() {
         
     }
@@ -72,7 +75,17 @@ class Question2ViewController: UIViewController {
                     }
                 }
             }
+        if segue.identifier == "segueToList" {
+            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+                for device in realDevices2.arrayValue {
+                finalViewController.realDevices5.append(device[])
+                }
+            }
         }
+
+        }
+  
+    
     }
     
     /*

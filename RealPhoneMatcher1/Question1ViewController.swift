@@ -23,7 +23,7 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+        
     }
     
     override func didReceiveMemoryWarning() {

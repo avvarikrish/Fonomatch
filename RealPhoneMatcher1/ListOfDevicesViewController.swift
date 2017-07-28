@@ -12,6 +12,15 @@ import Alamofire
 
 class ListOfDevicesTableViewController : UITableViewController {
     var deviceLabel: String = ""
+    var brandLabel: String = ""
+    var statusLabel: String = ""
+    var dimensionsLabel: String = ""
+    var weightLabel = ""
+    var resolutionLabel = ""
+    var featuresLabel = ""
+    var colorsLabel = ""
+    var talkTimeLabel = ""
+    var sizeLabel = ""
     var realDevices5: [JSON] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +43,15 @@ class ListOfDevicesTableViewController : UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         deviceLabel = realDevices5[indexPath.row]["DeviceName"].stringValue
-        print (deviceLabel)
+        brandLabel = realDevices5[indexPath.row]["Brand"].stringValue
+        statusLabel = realDevices5[indexPath.row]["status"].stringValue
+        dimensionsLabel = realDevices5[indexPath.row]["dimensions"].stringValue
+        weightLabel = realDevices5[indexPath.row]["weight"].stringValue
+        resolutionLabel = realDevices5[indexPath.row]["resolution"].stringValue
+        featuresLabel = realDevices5[indexPath.row]["features_c"].stringValue
+        colorsLabel = realDevices5[indexPath.row]["colors"].stringValue
+        talkTimeLabel = realDevices5[indexPath.row]["talk_time"].stringValue
+        sizeLabel = realDevices5[indexPath.row]["size"].stringValue
         // Segue to the second view controller
         self.performSegue(withIdentifier: "segueToProperties", sender: self)
         
@@ -44,7 +61,16 @@ class ListOfDevicesTableViewController : UITableViewController {
         if segue.identifier == "segueToProperties" {
             if let sixthViewController = segue.destination as? TestViewController {
                 // set a variable in the second view controller with the data to pass
-                sixthViewController.testLabel.text = deviceLabel
+                 sixthViewController.deviceNameLabel = deviceLabel
+                sixthViewController.brandNameLabel = brandLabel
+                sixthViewController.statusNameLabel = statusLabel
+                sixthViewController.dimensionsNameLabel = dimensionsLabel
+                sixthViewController.weightNameLabel = weightLabel
+                sixthViewController.resolutionNameLabel = resolutionLabel
+                sixthViewController.featuresNameLabel = featuresLabel
+                sixthViewController.colorsNameLabel = colorsLabel
+                sixthViewController.talkTimeNameLabel = talkTimeLabel
+                sixthViewController.sizeNameLabel = sizeLabel
             }
         }
     }

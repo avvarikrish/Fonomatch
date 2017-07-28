@@ -39,6 +39,9 @@ class Question4TalkTimeViewController: UIViewController {
         self.performSegue(withIdentifier: "segueToList", sender: self)
     }
 
+    @IBAction func view3AllDevices(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueToRealList", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToList" {
             if let fifthViewController = segue.destination as? ListOfDevicesTableViewController {
@@ -53,6 +56,13 @@ class Question4TalkTimeViewController: UIViewController {
                     } else {
                         fifthViewController.realDevices5.append(device)
                     }
+                }
+            }
+        }
+        if segue.identifier == "segueToRealList" {
+            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+                for device in realDevices4 {
+                    finalViewController.realDevices5.append(device)
                 }
             }
         }

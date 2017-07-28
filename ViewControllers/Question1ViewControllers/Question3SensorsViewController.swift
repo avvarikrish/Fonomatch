@@ -30,8 +30,8 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
         matchingDevices2.text = String (realDevices3.count) + " devices"
         // Do any additional setup after loading the view.
     }
-
-   
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -79,48 +79,58 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBAction func continue3Button(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segueToTalkTime", sender: self)
     }
+    @IBAction func view2AllDevices(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueToList", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToTalkTime" {
             if let fourthViewController = segue.destination as? Question4TalkTimeViewController {
-        for device in realDevices3 {
-                                    releaseValue = device["status"].stringValue
-                                    if releaseValue != "Discontinued" && releaseValue != "Rumored" && releaseValue != "Cancelled" && releaseValue != "Available" {
-                                        releaseDateDevicesArray = releaseValue.components(separatedBy: " ")
-                                        if Int (releaseDateDevicesArray[2]) != nil {
-                                            if Int(userDateSelected)! <= Int (releaseDateDevicesArray[2])! {
-                                                fourthViewController.realDevices4.append(device)
-                                            }
-                                        } else {
-                                            realReleaseDateDevicesArray = releaseDateDevicesArray[2].components(separatedBy: ",")
-                                            if Int(realReleaseDateDevicesArray[0]) != nil  {
-                                                if Int(userDateSelected)! <= Int (realReleaseDateDevicesArray[0])! {
-                                                    fourthViewController.realDevices4.append(device)
-                                                }
-                                            }
-                                        }
-                                    }
-            
-                                    if releaseValue == "Available" {
-                                        announcedValue = device["announced"].stringValue
-                                        realAnnouncedValue = announcedValue.components(separatedBy: ",")
-                                        if Int(userDateSelected)! <= Int(realAnnouncedValue[0])! {
-                                            fourthViewController.realDevices4.append(device)
-                                        }
-                                    }
+                for device in realDevices3 {
+                    releaseValue = device["status"].stringValue
+                    if releaseValue != "Discontinued" && releaseValue != "Rumored" && releaseValue != "Cancelled" && releaseValue != "Available" {
+                        releaseDateDevicesArray = releaseValue.components(separatedBy: " ")
+                        if Int (releaseDateDevicesArray[2]) != nil {
+                            if Int(userDateSelected)! <= Int (releaseDateDevicesArray[2])! {
+                                fourthViewController.realDevices4.append(device)
+                            }
+                        } else {
+                            realReleaseDateDevicesArray = releaseDateDevicesArray[2].components(separatedBy: ",")
+                            if Int(realReleaseDateDevicesArray[0]) != nil  {
+                                if Int(userDateSelected)! <= Int (realReleaseDateDevicesArray[0])! {
+                                    fourthViewController.realDevices4.append(device)
                                 }
-
-    }
+                            }
+                        }
+                    }
+                    
+                    if releaseValue == "Available" {
+                        announcedValue = device["announced"].stringValue
+                        realAnnouncedValue = announcedValue.components(separatedBy: ",")
+                        if Int(userDateSelected)! <= Int(realAnnouncedValue[0])! {
+                            fourthViewController.realDevices4.append(device)
+                        }
+                    }
+                }
+                
+            }
+        }
+        if segue.identifier == "segueToList" {
+            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+                for device in realDevices3 {
+                    finalViewController.realDevices5.append(device)
+                }
+            }
         }
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -93,19 +93,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You match" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ALH-gw-fdi">
-                                <rect key="frame" x="85" y="78" width="114" height="33"/>
+                                <rect key="frame" x="39" y="79" width="114" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8x-Rm-Vaa">
-                                <rect key="frame" x="170" y="84" width="121" height="21"/>
+                                <rect key="frame" x="127" y="85" width="121" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-dY-FF7">
+                                <rect key="frame" x="277" y="79" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View"/>
+                                <connections>
+                                    <action selector="viewDevices1:" destination="Yaz-fa-Jz9" eventType="touchUpInside" id="6Nk-j0-Euc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -117,11 +125,20 @@
                         <outlet property="sizeRange" destination="vVo-m2-dqg" id="hgN-lK-qX8"/>
                         <outlet property="sliderLabel" destination="EDg-hd-7Me" id="xjY-Bl-B9u"/>
                         <segue destination="cVr-wF-dKo" kind="show" identifier="segueToDates" id="eM3-jF-ONv"/>
+                        <segue destination="W3a-Ju-0pu" kind="show" identifier="segueToList" id="3v2-kL-Nxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spU-LN-gsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90.400000000000006" y="25.637181409295355"/>
+        </scene>
+        <!--ListOfDevices-->
+        <scene sceneID="wex-K3-EEV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListOfDevices" id="W3a-Ju-0pu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AH4-Cj-ezH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="-88"/>
         </scene>
         <!--Question3Dates-->
         <scene sceneID="jxH-ni-Rfy">

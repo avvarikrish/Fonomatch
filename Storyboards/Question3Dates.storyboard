@@ -55,14 +55,22 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You match" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ajo-3c-tBT">
-                                <rect key="frame" x="52" y="86" width="131" height="48"/>
+                                <rect key="frame" x="25" y="85" width="131" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe6-W4-43e">
-                                <rect key="frame" x="164" y="93" width="118" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMS-QC-n06">
+                                <rect key="frame" x="291" y="88" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View"/>
+                                <connections>
+                                    <action selector="view2AllDevices:" destination="VsX-dj-T82" eventType="touchUpInside" id="4mE-4F-uhl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe6-W4-43e">
+                                <rect key="frame" x="119" y="93" width="133" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -76,11 +84,20 @@
                         <outlet property="dateTextField" destination="08f-Tm-fLN" id="sRu-h4-Ikv"/>
                         <outlet property="matchingDevices2" destination="Pe6-W4-43e" id="cin-Ti-Pzd"/>
                         <segue destination="JC3-aU-eYV" kind="show" identifier="segueToTalkTime" id="gaG-nw-ihn"/>
+                        <segue destination="9f8-tA-eTu" kind="show" identifier="segueToList" id="8wM-52-HxW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D15-I7-pHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-114.40000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--ListOfDevices-->
+        <scene sceneID="aR6-cf-dM3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListOfDevices" id="9f8-tA-eTu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mbh-OG-XSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="84"/>
         </scene>
         <!--Question4TalkTime-->
         <scene sceneID="50A-v1-bRa">
