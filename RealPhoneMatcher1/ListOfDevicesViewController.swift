@@ -38,6 +38,7 @@ class ListOfDevicesTableViewController : UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listOfDevicesTableViewCell", for: indexPath)
+        cell.textLabel?.textColor = UIColor.orange
         cell.textLabel?.text = realDevices5[indexPath.row]["DeviceName"].stringValue
         return cell
     }

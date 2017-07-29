@@ -38,6 +38,12 @@ class tutorialViewController: UIViewController {
             }
         }
     }
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        
+    }
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return 5
+    }
     //hello
     override func viewDidLoad() {
         super.viewDidLoad()

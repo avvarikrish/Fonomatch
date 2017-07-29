@@ -21,8 +21,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var matchingDevices2: UILabel!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var datePickerView: UIPickerView!
-    @IBAction func continueToQ4Button(_ sender: UIButton) {
-    }
+
     var dateSelected: [String] = ["2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +61,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         self.dateTextField.text = self.dateSelected[row]
-        self.datePickerView.isHidden = true
+        self.datePickerView.isHidden = false
         userDateSelected = dateSelected[row]
         print (userDateSelected)
         
@@ -75,6 +74,10 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
             
             textField.endEditing(true)
         }
+    }
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let attributedString = NSAttributedString(string: dateSelected[row], attributes: [NSForegroundColorAttributeName : UIColor.white])
+        return attributedString
     }
     @IBAction func continue3Button(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segueToTalkTime", sender: self)

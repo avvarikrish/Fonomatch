@@ -15,15 +15,13 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     var realDevices: JSON = []
     @IBOutlet weak var question1TextBox: UITextField!
     @IBOutlet weak var question1DropDown: UIPickerView!
-   
-    
-
+    @IBOutlet weak var question1: UITextView!
     var list: [String] = ["Acer", "Alcatel", "Allview", "Apple", "Archos", "Asus", "Blackberry", "Blu", "BQ", "Celkon", "Coolpad", "Dell", "Energizer", "Garmin", "Google", "HP", "HTC", "Huawei", "I-Mobile", "IceMobile", "Intex", "Jolla", "Karbonn", "Kyocera", "Lava", "Leeco", "Lenovo", "LG", "Maxwest", "Meizu", "Micromax", "Microsoft", "Modu", "Motorola", "Nec", "NIU", "Nokia", "Nvidia", "Oneplus", "Oppo", "Orange", "Palm", "Panasonic", "Pantech", "Parla", "Plum", "Posh", "Prestigio", "Qmobile", "Samsung", "Sharp", "Sonim", "Sony", "Spice", "Toshiba", "Unnecto", "Vertu", "Vivo", "Vodafone", "Wiko", "Xiaomi", "Xolo", "Yezz", "Yota", "Yu", "ZTE"]
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        question1.text = "Question 1: Select a brand"
+        self.isEditing = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,9 +29,6 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         // Dispose of any resources that can be recreated.
         
     }
-
-    
-    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 1
         
@@ -59,14 +54,11 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         self.question1TextBox.text = self.list[row]
-        self.question1DropDown.isHidden = true
+        self.question1DropDown.isHidden = false
         valueSelected = list[row]
         print (valueSelected)
-    
+        
     }
-//    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-//        return NSAttributedString(string: "", attributes: [NSForegroundColorAttributeName:UIColor.white])
-//    }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
         if textField == self.question1TextBox {
@@ -76,6 +68,11 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             textField.endEditing(true)
         }
     }
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let attributedString = NSAttributedString(string: list[row], attributes: [NSForegroundColorAttributeName : UIColor.white])
+        return attributedString
+    }
+    
     @IBAction func continue1Button(_ sender: UIButton) {
         let apiToContact = "https://fonoapi.freshpixl.com/v1/getlatest?brand=" + valueSelected + "&token=fa3b068e2b9e81df7efa3295e02220ce66bec14716e21839"
         Alamofire.request(apiToContact).validate().responseJSON() { response in
