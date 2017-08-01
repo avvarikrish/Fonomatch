@@ -11,16 +11,18 @@ import SwiftyJSON
 import Alamofire
 
 class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    @IBOutlet weak var question1TextView: UITextView!
     var valueSelected = String()
     var realDevices: JSON = []
     @IBOutlet weak var question1TextBox: UITextField!
     @IBOutlet weak var question1DropDown: UIPickerView!
-    @IBOutlet weak var question1: UITextView!
     var list: [String] = ["Acer", "Alcatel", "Allview", "Apple", "Archos", "Asus", "Blackberry", "Blu", "BQ", "Celkon", "Coolpad", "Dell", "Energizer", "Garmin", "Google", "HP", "HTC", "Huawei", "I-Mobile", "IceMobile", "Intex", "Jolla", "Karbonn", "Kyocera", "Lava", "Leeco", "Lenovo", "LG", "Maxwest", "Meizu", "Micromax", "Microsoft", "Modu", "Motorola", "Nec", "NIU", "Nokia", "Nvidia", "Oneplus", "Oppo", "Orange", "Palm", "Panasonic", "Pantech", "Parla", "Plum", "Posh", "Prestigio", "Qmobile", "Samsung", "Sharp", "Sonim", "Sony", "Spice", "Toshiba", "Unnecto", "Vertu", "Vivo", "Vodafone", "Wiko", "Xiaomi", "Xolo", "Yezz", "Yota", "Yu", "ZTE"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        question1.text = "Question 1: Select a brand"
+        self.question1DropDown.isHidden = true
+        question1TextView.text = "Select a brand"
+        question1TextView.isUserInteractionEnabled = false
         self.isEditing = false
     }
     

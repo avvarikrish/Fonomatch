@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "MGSwipeButton.h"
+#import "MGSwipeTableCell.h"
 
-FOUNDATION_EXPORT double WARangeSliderVersionNumber;
-FOUNDATION_EXPORT const unsigned char WARangeSliderVersionString[];
+FOUNDATION_EXPORT double MGSwipeTableCellVersionNumber;
+FOUNDATION_EXPORT const unsigned char MGSwipeTableCellVersionString[];
 

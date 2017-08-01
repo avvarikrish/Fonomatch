@@ -48,12 +48,20 @@ class Question2ViewController: UIViewController {
         }
     }
     @IBAction func continue2DisplaySize(_ sender: UIButton) {
+        if (Int(displaySizeSliderOutlet.value)) <= (Int(displayMaxSizeSliderOutlet.value)) {
         userSizeValue=String (Int(displaySizeSliderOutlet.value))
         userMaxSizeValue = String(Int(displayMaxSizeSliderOutlet.value))
         sliderLabel.text = (userSizeValue)
         maxSizeSliderLabel.text = (userMaxSizeValue)
         print ("\(userSizeValue) - \(userMaxSizeValue)")
         self.performSegue(withIdentifier: "segueToDates", sender: self)
+        } else {
+            let popOverVC = UIStoryboard(name: "Question2DisplaySize", bundle: nil).instantiateViewController(withIdentifier: "SizePopUp") as! PopUpViewController
+            self.addChildViewController(popOverVC)
+            popOverVC.view.frame = self.view.frame
+            self.view.addSubview(popOverVC.view)
+            popOverVC.didMove(toParentViewController: self)
+        }
     }
     @IBAction func viewDevices1(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segueToList", sender: self)

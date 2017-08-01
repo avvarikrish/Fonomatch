@@ -8,5 +8,5 @@ target 'RealPhoneMatcher1' do
   # Pods for RealPhoneMatcher1
     pod 'Alamofire', '~> 4.4'
 	pod 'SwiftyJSON'
-pod “WARangeSlider”
+	pod 'MGSwipeTableCell'
 end

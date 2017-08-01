@@ -26,6 +26,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         print (realDevices3)
+        self.datePickerView.isHidden = true
         matchingDevices2.text = String (realDevices3.count) + " devices"
         // Do any additional setup after loading the view.
     }
@@ -99,8 +100,10 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
                         } else {
                             realReleaseDateDevicesArray = releaseDateDevicesArray[2].components(separatedBy: ",")
                             if Int(realReleaseDateDevicesArray[0]) != nil  {
+                                if Int(userDateSelected) != nil {
                                 if Int(userDateSelected)! <= Int (realReleaseDateDevicesArray[0])! {
                                     fourthViewController.realDevices4.append(device)
+                                }
                                 }
                             }
                         }

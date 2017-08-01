@@ -21,7 +21,7 @@
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listOfDevicesTableViewCell" id="x8t-02-ndA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listOfDevicesTableViewCell" id="x8t-02-ndA" customClass="MGSwipeTableCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x8t-02-ndA" id="M7N-Ku-qHV">
@@ -29,6 +29,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SIL-Uj-qvT" appends="YES" id="dk6-WH-IFR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -37,10 +41,16 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="swipeToView" destination="SIL-Uj-qvT" id="GLb-Ro-eqd"/>
                         <segue destination="chD-Ya-eoI" kind="show" identifier="segueToProperties" id="AJ0-O6-IGE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ma-n7-Cic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="SIL-Uj-qvT">
+                    <connections>
+                        <action selector="didSwipe:" destination="81h-Yq-Edn" id="b2n-xg-eiO"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-110" y="5"/>
         </scene>

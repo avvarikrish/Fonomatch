@@ -21,7 +21,6 @@ class Question4TalkTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         matchingPhones3.text = String(realDevices4.count) + " devices"
-
         // Do any additional setup after loading the view.
     }
 
