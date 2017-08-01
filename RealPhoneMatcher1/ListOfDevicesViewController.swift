@@ -39,6 +39,15 @@ class ListOfDevicesTableViewController : UITableViewController {
              cell.textLabel!.text = realDevices5[indexPath.row]["DeviceName"].stringValue
         cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"amazonlogo.png"), backgroundColor: .white) { (sender: MGSwipeTableCell!) -> Bool in
             print ("Amazon button clicked")
+            var amazonDevice = self.realDevices5[indexPath.row]["DeviceName"].stringValue
+            var amazonDeviceArray = amazonDevice.components(separatedBy: " ")
+            var realAmazonDeviceArray = ""
+            for x in 0...amazonDeviceArray.count-1 {
+                realAmazonDeviceArray += amazonDeviceArray[x] + "+"
+                print ("x")
+            }
+            print (realAmazonDeviceArray)
+            UIApplication.shared.openURL(NSURL(string: "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=\(realAmazonDeviceArray)")! as URL)
             return true}]
         return cell
     }
