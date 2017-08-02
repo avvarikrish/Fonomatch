@@ -21,13 +21,18 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var matchingDevices2: UILabel!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var datePickerView: UIPickerView!
-
+    @IBOutlet weak var question3Label: UILabel!
     var dateSelected: [String] = ["2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"]
     override func viewDidLoad() {
         super.viewDidLoad()
         print (realDevices3)
         self.datePickerView.isHidden = true
-        matchingDevices2.text = String (realDevices3.count) + " devices"
+        if realDevices3.count == 1 {
+        matchingDevices2.text = "You match:   " + String (realDevices3.count) + " device"
+        } else {
+            matchingDevices2.text = "You match:   " + String (realDevices3.count) + " devices"
+        }
+        question3Label.text = "Indicate the earliest year of availability."
         // Do any additional setup after loading the view.
     }
     

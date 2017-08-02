@@ -15,15 +15,17 @@ class Question2ViewController: UIViewController {
     var userSizeValue: String = ""
     var userMaxSizeValue = ""
     var sizeDevicesArray: [String] = []
-    @IBOutlet weak var matchingDevices1: UILabel!
     @IBOutlet weak var sliderLabel: UILabel!
     @IBOutlet weak var displaySizeSliderOutlet: UISlider!
     @IBOutlet weak var maxSizeSliderLabel: UILabel!
     @IBOutlet weak var sizeRange: UILabel!
     @IBOutlet weak var displayMaxSizeSliderOutlet: UISlider!
+    @IBOutlet weak var question2Label: UILabel!
+    @IBOutlet weak var matchingDevices1: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        matchingDevices1.text = String(realDevices2.count) + " devices"
+        matchingDevices1.text = "You match:   " + String(realDevices2.count) + " devices"
+        question2Label.text = "Indicate a size range for screen display."
     }
     @IBAction func displaySizeSlider(_ sender: UISlider) {
 //

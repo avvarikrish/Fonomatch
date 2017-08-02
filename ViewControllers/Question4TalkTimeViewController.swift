@@ -18,9 +18,11 @@ class Question4TalkTimeViewController: UIViewController {
     @IBOutlet weak var talkTimeSlider: UISlider!
     @IBOutlet weak var talkTimeLabel: UILabel!
     @IBOutlet weak var matchingPhones3: UILabel!
+    @IBOutlet weak var question4Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        matchingPhones3.text = String(realDevices4.count) + " devices"
+        matchingPhones3.text = "You match:   " + String(realDevices4.count) + " devices"
+        question4Label.text = "Indicate the minimum talk time (battery life)."
         // Do any additional setup after loading the view.
     }
 

@@ -24,7 +24,6 @@ class ListOfDevicesTableViewController : UITableViewController {
     var sizeLabel = ""
     var realDevices5: [JSON] = []
     @IBOutlet var swipeToView: UISwipeGestureRecognizer!
-    
     @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {
     }
     override func viewDidLoad() {
@@ -34,12 +33,12 @@ class ListOfDevicesTableViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let reuseIdentifier = "listOfDevicesTableViewCell"
-        var cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MGSwipeTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MGSwipeTableCell
         cell.textLabel?.textColor = UIColor.orange
-             cell.textLabel!.text = realDevices5[indexPath.row]["DeviceName"].stringValue
+        cell.textLabel!.text = realDevices5[indexPath.row]["DeviceName"].stringValue
         cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"amazonlogo.png"), backgroundColor: .white) { (sender: MGSwipeTableCell!) -> Bool in
             print ("Amazon button clicked")
-            var amazonDevice = self.realDevices5[indexPath.row]["DeviceName"].stringValue
+            let amazonDevice = self.realDevices5[indexPath.row]["DeviceName"].stringValue
             var amazonDeviceArray = amazonDevice.components(separatedBy: " ")
             var realAmazonDeviceArray = ""
             for x in 0...amazonDeviceArray.count-1 {
@@ -61,12 +60,12 @@ class ListOfDevicesTableViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return realDevices5.count
     }
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "listOfDevicesTableViewCell", for: indexPath)
-//        cell.textLabel?.textColor = UIColor.orange
-//        cell.textLabel?.text = realDevices5[indexPath.row]["DeviceName"].stringValue
-//        return cell
-//    }
+    //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //        let cell = tableView.dequeueReusableCell(withIdentifier: "listOfDevicesTableViewCell", for: indexPath)
+    //        cell.textLabel?.textColor = UIColor.orange
+    //        cell.textLabel?.text = realDevices5[indexPath.row]["DeviceName"].stringValue
+    //        return cell
+    //    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         deviceLabel = realDevices5[indexPath.row]["DeviceName"].stringValue
@@ -105,8 +104,11 @@ class ListOfDevicesTableViewController : UITableViewController {
         return true
     }
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        realDevices5.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .fade)
+        if editingStyle == .delete {
+            realDevices5.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            self.tableView.reloadData()
+        }
     }
     func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         
@@ -120,34 +122,8 @@ class ListOfDevicesTableViewController : UITableViewController {
         return false
         
     }
-//    func didSwipe(gestureRecognizer:UIGestureRecognizer) {
-//        if gestureRecognizer.state == UIGestureRecognizerState.ended {
-//            let swipeLocation = gestureRecognizer.location(in: self.tableView)
-//            if let swipedIndexPath = self.tableView.indexPathForRow(at: swipeLocation){
-//                if let swipedCell = self.tableView.cellForRow(at: swipedIndexPath){
-//                    
-//                    
-//                }
-//            }
-//        }
-//    }
-//    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-//        let delete = UITableViewRowAction(style: .default, title: "Delete") { (action:UITableViewRowAction, indexPath:IndexPath) in
-//            print("delete at:\(indexPath)")
-//        }
-//        delete.backgroundColor = .red
-//        
-//        let more = UITableViewRowAction(style: .default, title: "More") { (action:UITableViewRowAction, indexPath:IndexPath) in
-//            print("more at:\(indexPath)")
-//        }
-//        more.backgroundColor = .orange
-//        
-//        return [delete, more]
-//    }
     
     
-    
-
     
     /*
      // MARK: - Navigation
