@@ -15,7 +15,6 @@ class TestViewController: UIViewController {
     @IBOutlet weak var realDimensionsLabel: UILabel!
     @IBOutlet weak var realWeightLabel: UILabel!
     @IBOutlet weak var realResolutionLabel: UILabel!
-    @IBOutlet weak var realFeaturesLabel: UILabel!
     @IBOutlet weak var realColorsLabel: UILabel!
     @IBOutlet weak var realTalkTimeLabel: UILabel!
     @IBOutlet weak var realSizeLabel: UILabel!
@@ -25,19 +24,23 @@ class TestViewController: UIViewController {
     var dimensionsNameLabel = ""
     var weightNameLabel = ""
     var resolutionNameLabel = ""
+    var realResolutionNameLabel: [String] = []
     var featuresNameLabel = ""
     var colorsNameLabel = ""
     var talkTimeNameLabel = ""
     var sizeNameLabel = ""
+    var realBrandNameLabel = "Brand:"
+    var myMutableString = NSMutableAttributedString()
     override func viewDidLoad() {
         super.viewDidLoad()
         testLabel.text = deviceNameLabel + ":"
         realBrandLabel.text = "Brand: " + brandNameLabel
         realStatusLabel.text = "Status: " + statusNameLabel
+        realDimensionsLabel.lineBreakMode = .byWordWrapping
         realDimensionsLabel.text = "Dimensions: " + dimensionsNameLabel
         realWeightLabel.text = "Weight: " + weightNameLabel
-        realResolutionLabel.text = "Resolution: " + resolutionNameLabel
-        realFeaturesLabel.text = "Features: " + featuresNameLabel
+        realResolutionNameLabel = resolutionNameLabel.components(separatedBy: " (")
+        realResolutionLabel.text = "Resolution: " + realResolutionNameLabel[0]
         realColorsLabel.text = "Colors: " + colorsNameLabel
         realTalkTimeLabel.text = "Talk Time: " + talkTimeNameLabel
         realSizeLabel.text = "Size: " + sizeNameLabel

@@ -27,6 +27,12 @@
 		2DB5EDA11F294990005C7A82 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDA01F294990005C7A82 /* TestViewController.swift */; };
 		2DB5EDA31F2949C8005C7A82 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */; };
 		2DB5EDC31F2F9B04005C7A82 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDC21F2F9B04005C7A82 /* PopUpViewController.swift */; };
+		2DB5EDCB1F34FD4A005C7A82 /* PopUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDCA1F34FD4A005C7A82 /* PopUpViewController2.swift */; };
+		2DB5EDCD1F351A7E005C7A82 /* loadGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDCC1F351A7E005C7A82 /* loadGif.swift */; };
+		2DB5EDCF1F351B01005C7A82 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDCE1F351B01005C7A82 /* TransitionViewController.swift */; };
+		2DB5EDDB1F352A12005C7A82 /* croppedswipeleft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */; };
+		2DB5EDDD1F352A1A005C7A82 /* croppedswiperight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDC1F352A1A005C7A82 /* croppedswiperight.gif */; };
+		2DB5EDDF1F352F78005C7A82 /* coloredgifleft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDE1F352F78005C7A82 /* coloredgifleft.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,12 @@
 		2DB5EDA01F294990005C7A82 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestStoryboard.storyboard; path = ../ViewControllers/TestStoryboard.storyboard; sourceTree = "<group>"; };
 		2DB5EDC21F2F9B04005C7A82 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		2DB5EDCA1F34FD4A005C7A82 /* PopUpViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController2.swift; sourceTree = "<group>"; };
+		2DB5EDCC1F351A7E005C7A82 /* loadGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadGif.swift; sourceTree = "<group>"; };
+		2DB5EDCE1F351B01005C7A82 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = croppedswipeleft.gif; path = ../../../Downloads/croppedswipeleft.gif; sourceTree = "<group>"; };
+		2DB5EDDC1F352A1A005C7A82 /* croppedswiperight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = croppedswiperight.gif; path = ../../../Downloads/croppedswiperight.gif; sourceTree = "<group>"; };
+		2DB5EDDE1F352F78005C7A82 /* coloredgifleft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = coloredgifleft.gif; path = ../../../Downloads/coloredgifleft.gif; sourceTree = "<group>"; };
 		5F203EF5CBAFB9EFB44532F4 /* Pods_RealPhoneMatcher1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealPhoneMatcher1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AD47C5A1D53EB141569982 /* Pods-RealPhoneMatcher1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealPhoneMatcher1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealPhoneMatcher1/Pods-RealPhoneMatcher1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,10 +114,13 @@
 		2D6295071F1EBDDE00C1D058 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DB5EDCC1F351A7E005C7A82 /* loadGif.swift */,
+				2DB5EDCE1F351B01005C7A82 /* TransitionViewController.swift */,
 				2DB5EDC21F2F9B04005C7A82 /* PopUpViewController.swift */,
 				2DB5EDA01F294990005C7A82 /* TestViewController.swift */,
 				2DB5ED9A1F26A128005C7A82 /* Question4TalkTimeViewController.swift */,
 				2D6294FB1F1D7EBC00C1D058 /* ListOfDevicesViewController.swift */,
+				2DB5EDCA1F34FD4A005C7A82 /* PopUpViewController2.swift */,
 				2D6295011F1EBB1900C1D058 /* Question2ViewController.swift */,
 				2D564BEC1F1C4AC00082C77A /* Question1ViewController.swift */,
 				2D5CC4BB1F181288004327B9 /* TutorialViewController.swift */,
@@ -121,6 +136,9 @@
 				2DB5ED9E1F28FCE4005C7A82 /* ListOfDevices.storyboard */,
 				2D6295101F201D4900C1D058 /* Question3Dates.storyboard */,
 				2D5CC4C21F181288004327B9 /* LaunchScreen.storyboard */,
+				2DB5EDDE1F352F78005C7A82 /* coloredgifleft.gif */,
+				2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */,
+				2DB5EDDC1F352A1A005C7A82 /* croppedswiperight.gif */,
 				2D5CC4BD1F181288004327B9 /* Main.storyboard */,
 				2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */,
 				2D6294FF1F1EB2E600C1D058 /* Question2DisplaySize.storyboard */,
@@ -213,11 +231,14 @@
 			files = (
 				2D6295111F201D4900C1D058 /* Question3Dates.storyboard in Resources */,
 				2DB5ED991F269F7B005C7A82 /* Question4TalkTime.storyboard in Resources */,
+				2DB5EDDB1F352A12005C7A82 /* croppedswipeleft.gif in Resources */,
 				2D564BEF1F1C4B020082C77A /* Question1.storyboard in Resources */,
 				2DB5ED9F1F28FCE4005C7A82 /* ListOfDevices.storyboard in Resources */,
 				2D5CC4C41F181288004327B9 /* LaunchScreen.storyboard in Resources */,
 				2D6295001F1EB2E600C1D058 /* Question2DisplaySize.storyboard in Resources */,
+				2DB5EDDF1F352F78005C7A82 /* coloredgifleft.gif in Resources */,
 				2DB5EDA31F2949C8005C7A82 /* TestStoryboard.storyboard in Resources */,
+				2DB5EDDD1F352A1A005C7A82 /* croppedswiperight.gif in Resources */,
 				2D5CC4C11F181288004327B9 /* Assets.xcassets in Resources */,
 				2D5CC4BF1F181288004327B9 /* Main.storyboard in Resources */,
 			);
@@ -281,13 +302,16 @@
 				2D6294FC1F1D7EBC00C1D058 /* ListOfDevicesViewController.swift in Sources */,
 				2D564BED1F1C4AC00082C77A /* Question1ViewController.swift in Sources */,
 				2D5CC4BC1F181288004327B9 /* TutorialViewController.swift in Sources */,
+				2DB5EDCD1F351A7E005C7A82 /* loadGif.swift in Sources */,
 				2D6295021F1EBB1900C1D058 /* Question2ViewController.swift in Sources */,
 				2D5CC4BA1F181288004327B9 /* AppDelegate.swift in Sources */,
 				2DB5EDC31F2F9B04005C7A82 /* PopUpViewController.swift in Sources */,
+				2DB5EDCB1F34FD4A005C7A82 /* PopUpViewController2.swift in Sources */,
 				2D62950E1F201D1000C1D058 /* Question3SensorsViewController.swift in Sources */,
 				2DB5ED9B1F26A128005C7A82 /* Question4TalkTimeViewController.swift in Sources */,
 				2DB5EDA11F294990005C7A82 /* TestViewController.swift in Sources */,
 				2D6294F81F1D40B700C1D058 /* Devices.swift in Sources */,
+				2DB5EDCF1F351B01005C7A82 /* TransitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

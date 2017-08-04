@@ -79,7 +79,11 @@ class ListOfDevicesTableViewController : UITableViewController {
         sizeLabel = realDevices5[indexPath.row]["size"].stringValue
         // Segue to the second view controller
         self.performSegue(withIdentifier: "segueToProperties", sender: self)
-        
+//        let popOverVC = UIStoryboard(name: "ListOfDevices", bundle: nil).instantiateViewController(withIdentifier: "PropertiesPopUp") as! PopUpViewController2
+//        self.addChildViewController(popOverVC)
+//        popOverVC.view.frame = self.view.frame
+//        self.view.addSubview(popOverVC.view)
+//        popOverVC.didMove(toParentViewController: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // get a reference to the second view controller

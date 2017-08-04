@@ -9,4 +9,5 @@ target 'RealPhoneMatcher1' do
     pod 'Alamofire', '~> 4.4'
 	pod 'SwiftyJSON'
 	pod 'MGSwipeTableCell'
+	pod 'NVActivityIndicatorView'
 end

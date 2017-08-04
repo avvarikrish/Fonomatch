@@ -25,7 +25,7 @@ class Question4TalkTimeViewController: UIViewController {
     }
 
     @IBAction func talkTimeActionSlider(_ sender: UISlider) {
-        talkTimeLabel.text = String(Int(talkTimeSlider.value)) + " hours"
+        talkTimeLabel.text = String(Int(talkTimeSlider.value)) + " hours without charge"
     }
     
     override func didReceiveMemoryWarning() {

@@ -24,11 +24,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDM-7e-Exy">
-                                <rect key="frame" x="125" y="269" width="124" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 hours without charge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDM-7e-Exy">
+                                <rect key="frame" x="60" y="269" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pwZ-vf-z3V"/>
-                                    <constraint firstAttribute="width" constant="124" id="skL-Px-Z0P"/>
+                                    <constraint firstAttribute="width" constant="200" id="skL-Px-Z0P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,7 +74,7 @@
                                     <action selector="continue4Button:" destination="AlL-GN-73I" eventType="touchUpInside" id="JYs-2k-pcN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicate the minimum talk time (battery life)." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-lA-Z6H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicate the minimum battery life." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-lA-Z6H">
                                 <rect key="frame" x="0.0" y="115" width="320" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="cKq-9Y-ftr"/>
@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-aP-A57">
-                                <rect key="frame" x="254" y="27" width="50" height="35"/>
+                                <rect key="frame" x="254" y="25" width="50" height="35"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="View">
@@ -104,10 +104,8 @@
                         <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QDM-7e-Exy" firstAttribute="top" relation="lessThanOrEqual" secondItem="3Na-O2-Xv2" secondAttribute="bottom" constant="55" id="1Hu-Gs-GGS"/>
-                            <constraint firstItem="Q7d-aP-A57" firstAttribute="top" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="7" id="1Oe-2n-tL0"/>
+                            <constraint firstItem="Q7d-aP-A57" firstAttribute="top" relation="lessThanOrEqual" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="5" id="1Oe-2n-tL0"/>
                             <constraint firstItem="SnK-tK-PDZ" firstAttribute="top" secondItem="7uL-8s-zvb" secondAttribute="bottom" constant="114" id="1b7-yk-CLc"/>
-                            <constraint firstItem="QDM-7e-Exy" firstAttribute="leading" secondItem="mVj-vS-ofZ" secondAttribute="leadingMargin" constant="109" id="5l2-Zg-XGT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QDM-7e-Exy" secondAttribute="trailing" constant="110" id="6XQ-jv-LWa"/>
                             <constraint firstItem="7uL-8s-zvb" firstAttribute="top" secondItem="QDM-7e-Exy" secondAttribute="bottom" constant="134" id="932-xu-fuC"/>
                             <constraint firstItem="IQv-th-Us6" firstAttribute="top" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="10" id="JEs-BR-vPS"/>
                             <constraint firstItem="fzX-lA-Z6H" firstAttribute="leading" secondItem="mVj-vS-ofZ" secondAttribute="leading" id="JoE-jp-4HF"/>
@@ -119,7 +117,7 @@
                             <constraint firstItem="QDM-7e-Exy" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="gdK-ps-GuM"/>
                             <constraint firstItem="IQv-th-Us6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="mVj-vS-ofZ" secondAttribute="leadingMargin" id="nUX-gQ-0C8"/>
                             <constraint firstItem="fzX-lA-Z6H" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="prL-2J-BFz"/>
-                            <constraint firstItem="fzX-lA-Z6H" firstAttribute="top" secondItem="Q7d-aP-A57" secondAttribute="bottom" constant="53" id="qbE-8x-EE8"/>
+                            <constraint firstItem="fzX-lA-Z6H" firstAttribute="top" secondItem="Q7d-aP-A57" secondAttribute="bottom" constant="55" id="qbE-8x-EE8"/>
                             <constraint firstItem="3Na-O2-Xv2" firstAttribute="top" secondItem="fzX-lA-Z6H" secondAttribute="bottom" constant="30" id="r23-zt-FsS"/>
                         </constraints>
                     </view>

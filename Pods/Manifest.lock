@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.5.0)
   - MGSwipeTableCell (1.5.6)
+  - NVActivityIndicatorView (3.6.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - MGSwipeTableCell
+  - NVActivityIndicatorView
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 1a7dcfacb9abfd2ecf8d41722953c30d4f58f5ea
+PODFILE CHECKSUM: c8c3095923e63d78a1b75e0b24f4ddd8aa48c2a8
 
 COCOAPODS: 1.2.1

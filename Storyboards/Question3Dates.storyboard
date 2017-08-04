@@ -106,8 +106,8 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="uMS-QC-n06" secondAttribute="trailing" id="2gl-jd-uN3"/>
                             <constraint firstItem="uMS-QC-n06" firstAttribute="leading" secondItem="Pe6-W4-43e" secondAttribute="trailing" constant="25" id="4jA-PD-1LC"/>
-                            <constraint firstItem="9n2-wK-dTC" firstAttribute="top" secondItem="Yxu-gT-xrF" secondAttribute="bottom" id="9QM-ef-oiW"/>
-                            <constraint firstItem="08f-Tm-fLN" firstAttribute="top" secondItem="woV-VJ-5Il" secondAttribute="bottom" constant="20" id="CHt-Mz-P71"/>
+                            <constraint firstItem="9n2-wK-dTC" firstAttribute="top" secondItem="Yxu-gT-xrF" secondAttribute="bottom" constant="35" id="9QM-ef-oiW"/>
+                            <constraint firstItem="08f-Tm-fLN" firstAttribute="top" secondItem="woV-VJ-5Il" secondAttribute="bottom" constant="30" id="CHt-Mz-P71"/>
                             <constraint firstAttribute="trailingMargin" secondItem="08f-Tm-fLN" secondAttribute="trailing" constant="115" id="FT1-SL-JxC"/>
                             <constraint firstItem="Pe6-W4-43e" firstAttribute="top" relation="lessThanOrEqual" secondItem="1NH-cb-wLL" secondAttribute="bottom" constant="10" id="JDT-xP-UYU"/>
                             <constraint firstItem="08f-Tm-fLN" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leadingMargin" constant="114" id="MGQ-Si-GZs"/>
@@ -120,7 +120,6 @@
                             <constraint firstItem="woV-VJ-5Il" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leading" id="ab1-H8-lqe"/>
                             <constraint firstItem="woV-VJ-5Il" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="hqQ-7q-g4A"/>
                             <constraint firstItem="08f-Tm-fLN" firstAttribute="centerX" secondItem="Yxu-gT-xrF" secondAttribute="centerX" id="lEd-uA-0mj"/>
-                            <constraint firstItem="kfz-5B-MqF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9n2-wK-dTC" secondAttribute="bottom" constant="52" id="odP-ZC-0hV"/>
                         </constraints>
                     </view>
                     <connections>
