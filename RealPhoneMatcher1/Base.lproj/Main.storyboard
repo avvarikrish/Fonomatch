@@ -51,11 +51,19 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c6b-RS-bYa">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
                                                                                 <subviews>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h05-eN-sbC">
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h05-eN-sbC">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
                                                                                         <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                        <state key="normal" title="Continue">
-                                                                                            <color key="titleColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <state key="normal">
+                                                                                            <attributedString key="attributedTitle">
+                                                                                                <fragment content="Continue">
+                                                                                                    <attributes>
+                                                                                                        <color key="NSColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                                                                        <integer key="NSUnderline" value="1"/>
+                                                                                                    </attributes>
+                                                                                                </fragment>
+                                                                                            </attributedString>
                                                                                         </state>
                                                                                         <connections>
                                                                                             <segue destination="Y3E-6m-f1m" kind="show" id="NdW-rY-vCj"/>

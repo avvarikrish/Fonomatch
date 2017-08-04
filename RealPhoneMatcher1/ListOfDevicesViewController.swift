@@ -43,7 +43,6 @@ class ListOfDevicesTableViewController : UITableViewController {
             var realAmazonDeviceArray = ""
             for x in 0...amazonDeviceArray.count-1 {
                 realAmazonDeviceArray += amazonDeviceArray[x] + "+"
-                print ("x")
             }
             print (realAmazonDeviceArray)
             UIApplication.shared.openURL(NSURL(string: "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=\(realAmazonDeviceArray)")! as URL)
