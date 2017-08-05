@@ -22,12 +22,13 @@ class ListOfDevicesTableViewController : UITableViewController {
     var colorsLabel = ""
     var talkTimeLabel = ""
     var sizeLabel = ""
-    var realDevices5: [JSON] = []
+    var realDevices6: [JSON] = []
     @IBOutlet var swipeToView: UISwipeGestureRecognizer!
     @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print (realDevices6)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -35,10 +36,10 @@ class ListOfDevicesTableViewController : UITableViewController {
         let reuseIdentifier = "listOfDevicesTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MGSwipeTableCell
         cell.textLabel?.textColor = UIColor.orange
-        cell.textLabel!.text = realDevices5[indexPath.row]["DeviceName"].stringValue
+        cell.textLabel!.text = realDevices6[indexPath.row]["DeviceName"].stringValue
         cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"amazonlogo.png"), backgroundColor: .white) { (sender: MGSwipeTableCell!) -> Bool in
             print ("Amazon button clicked")
-            let amazonDevice = self.realDevices5[indexPath.row]["DeviceName"].stringValue
+            let amazonDevice = self.realDevices6[indexPath.row]["DeviceName"].stringValue
             var amazonDeviceArray = amazonDevice.components(separatedBy: " ")
             var realAmazonDeviceArray = ""
             for x in 0...amazonDeviceArray.count-1 {
@@ -57,7 +58,7 @@ class ListOfDevicesTableViewController : UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return realDevices5.count
+        return realDevices6.count
     }
     //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     //        let cell = tableView.dequeueReusableCell(withIdentifier: "listOfDevicesTableViewCell", for: indexPath)
@@ -67,16 +68,16 @@ class ListOfDevicesTableViewController : UITableViewController {
     //    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        deviceLabel = realDevices5[indexPath.row]["DeviceName"].stringValue
-        brandLabel = realDevices5[indexPath.row]["Brand"].stringValue
-        statusLabel = realDevices5[indexPath.row]["status"].stringValue
-        dimensionsLabel = realDevices5[indexPath.row]["dimensions"].stringValue
-        weightLabel = realDevices5[indexPath.row]["weight"].stringValue
-        resolutionLabel = realDevices5[indexPath.row]["resolution"].stringValue
-        featuresLabel = realDevices5[indexPath.row]["features_c"].stringValue
-        colorsLabel = realDevices5[indexPath.row]["colors"].stringValue
-        talkTimeLabel = realDevices5[indexPath.row]["talk_time"].stringValue
-        sizeLabel = realDevices5[indexPath.row]["size"].stringValue
+        deviceLabel = realDevices6[indexPath.row]["DeviceName"].stringValue
+        brandLabel = realDevices6[indexPath.row]["Brand"].stringValue
+        statusLabel = realDevices6[indexPath.row]["status"].stringValue
+        dimensionsLabel = realDevices6[indexPath.row]["dimensions"].stringValue
+        weightLabel = realDevices6[indexPath.row]["weight"].stringValue
+        resolutionLabel = realDevices6[indexPath.row]["resolution"].stringValue
+        featuresLabel = realDevices6[indexPath.row]["features_c"].stringValue
+        colorsLabel = realDevices6[indexPath.row]["colors"].stringValue
+        talkTimeLabel = realDevices6[indexPath.row]["talk_time"].stringValue
+        sizeLabel = realDevices6[indexPath.row]["size"].stringValue
         // Segue to the second view controller
         self.performSegue(withIdentifier: "segueToProperties", sender: self)
 //        let popOverVC = UIStoryboard(name: "ListOfDevices", bundle: nil).instantiateViewController(withIdentifier: "PropertiesPopUp") as! PopUpViewController2
@@ -108,7 +109,7 @@ class ListOfDevicesTableViewController : UITableViewController {
     }
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            realDevices5.remove(at: indexPath.row)
+            realDevices6.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             self.tableView.reloadData()
         }

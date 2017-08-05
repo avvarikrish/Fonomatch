@@ -124,7 +124,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
             }
         }
         if segue.identifier == "segueToList" {
-            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+            if let finalViewController = segue.destination as? TransitionViewController {
                 for device in realDevices3 {
                     finalViewController.realDevices5.append(device)
                 }

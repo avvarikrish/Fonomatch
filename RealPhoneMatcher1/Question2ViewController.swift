@@ -71,6 +71,9 @@ class Question2ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        matchingDevices1.text = "You match:   " + String(realDevices2.count) + " devices"
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToDates" {
             if let thirdViewController = segue.destination as? Question3DatesViewController {
@@ -86,7 +89,7 @@ class Question2ViewController: UIViewController {
                 }
             }
         if segue.identifier == "segueToList" {
-            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+            if let finalViewController = segue.destination as? TransitionViewController {
                 for device in realDevices2.arrayValue {
                 finalViewController.realDevices5.append(device[])
                 }

@@ -38,7 +38,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="81h-Yq-Edn" kind="show" id="kFI-qf-uqr"/>
+                                    <action selector="continueButtonToList:" destination="fjD-Oc-Tef" eventType="touchUpInside" id="6uh-tM-93G"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3h0-UN-mbC">
@@ -108,6 +108,7 @@
                     <connections>
                         <outlet property="swipeLeft" destination="tkJ-Xx-zAa" id="coa-aR-Cbl"/>
                         <outlet property="swipeRight" destination="3h0-UN-mbC" id="UBr-6o-hXj"/>
+                        <segue destination="81h-Yq-Edn" kind="show" identifier="realSegueToList" id="eXm-xJ-sQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6p-sk-X0l" userLabel="First Responder" sceneMemberID="firstResponder"/>

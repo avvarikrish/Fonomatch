@@ -43,7 +43,7 @@ class Question4TalkTimeViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToList" {
-            if let fifthViewController = segue.destination as? ListOfDevicesTableViewController {
+            if let fifthViewController = segue.destination as? TransitionViewController {
                 for device in realDevices4 {
                     talkTimeValue = device["talk_time"].stringValue
                     talkTimeDevicesArray = talkTimeValue.components(separatedBy: " ")
@@ -59,7 +59,7 @@ class Question4TalkTimeViewController: UIViewController {
             }
         }
         if segue.identifier == "segueToRealList" {
-            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+            if let finalViewController = segue.destination as? TransitionViewController{
                 for device in realDevices4 {
                     finalViewController.realDevices5.append(device)
                 }

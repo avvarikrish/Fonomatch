@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class TransitionViewController: UIViewController {
-
+    var realDevices5 : [JSON] = []
     @IBOutlet weak var swipeRight: UIImageView!
     @IBOutlet weak var swipeLeft: UIImageView!
     override func viewDidLoad() {
@@ -23,7 +24,19 @@ class TransitionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func continueButtonToList(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "realSegueToList", sender: self)
+        print (realDevices5)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "realSegueToList" {
+            if let finalViewController = segue.destination as? ListOfDevicesTableViewController {
+                for device in realDevices5 {
+                finalViewController.realDevices6.append(device) 
+                }
+                }
+            }
+        }
 
     /*
     // MARK: - Navigation
