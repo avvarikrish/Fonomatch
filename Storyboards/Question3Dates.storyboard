@@ -22,23 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9n2-wK-dTC">
-                                <rect key="frame" x="122" y="486" width="76" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n2-wK-dTC">
+                                <rect key="frame" x="122" y="458" width="76" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="94" id="Bpz-ft-dqx"/>
                                     <constraint firstAttribute="width" constant="76" id="hC0-7L-8iW"/>
                                     <constraint firstAttribute="height" constant="30" id="n3x-WX-V6d"/>
                                 </constraints>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Continue">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continue3Button:" destination="VsX-dj-T82" eventType="touchUpInside" id="5CD-NU-38Q"/>
@@ -51,21 +43,14 @@
                                     <constraint firstAttribute="height" constant="25" id="NyA-5J-nq8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.30588235294117649" green="0.72941176470588232" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMS-QC-n06">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMS-QC-n06">
                                 <rect key="frame" x="259" y="50" width="45" height="3"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="View">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="view2AllDevices:" destination="VsX-dj-T82" eventType="touchUpInside" id="4mE-4F-uhl"/>
@@ -81,11 +66,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08f-Tm-fLN">
-                                <rect key="frame" x="130" y="156" width="59" height="30"/>
+                                <rect key="frame" x="110" y="156" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.32156862749999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8g8-gJ-uXd"/>
-                                    <constraint firstAttribute="width" constant="130" id="IxI-AB-Aar"/>
+                                    <constraint firstAttribute="width" constant="100" id="IxI-AB-Aar"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -106,20 +91,20 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="uMS-QC-n06" secondAttribute="trailing" id="2gl-jd-uN3"/>
                             <constraint firstItem="uMS-QC-n06" firstAttribute="leading" secondItem="Pe6-W4-43e" secondAttribute="trailing" constant="25" id="4jA-PD-1LC"/>
-                            <constraint firstItem="9n2-wK-dTC" firstAttribute="top" secondItem="Yxu-gT-xrF" secondAttribute="bottom" constant="35" id="9QM-ef-oiW"/>
                             <constraint firstItem="08f-Tm-fLN" firstAttribute="top" secondItem="woV-VJ-5Il" secondAttribute="bottom" constant="30" id="CHt-Mz-P71"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="08f-Tm-fLN" secondAttribute="trailing" constant="115" id="FT1-SL-JxC"/>
+                            <constraint firstItem="Yxu-gT-xrF" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="J2G-Xz-Gp9"/>
                             <constraint firstItem="Pe6-W4-43e" firstAttribute="top" relation="lessThanOrEqual" secondItem="1NH-cb-wLL" secondAttribute="bottom" constant="10" id="JDT-xP-UYU"/>
-                            <constraint firstItem="08f-Tm-fLN" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leadingMargin" constant="114" id="MGQ-Si-GZs"/>
                             <constraint firstItem="Pe6-W4-43e" firstAttribute="leading" relation="lessThanOrEqual" secondItem="5H2-cr-4BS" secondAttribute="leadingMargin" id="NS0-ga-NcI"/>
-                            <constraint firstItem="9n2-wK-dTC" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leading" constant="122" id="Nb1-zf-gMl"/>
                             <constraint firstItem="uMS-QC-n06" firstAttribute="top" relation="lessThanOrEqual" secondItem="1NH-cb-wLL" secondAttribute="bottom" constant="5" id="W4F-uQ-JVW"/>
                             <constraint firstItem="9n2-wK-dTC" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="W8f-Hh-KEa"/>
                             <constraint firstItem="woV-VJ-5Il" firstAttribute="top" secondItem="Pe6-W4-43e" secondAttribute="bottom" constant="50" id="ZHH-e7-ZVP"/>
                             <constraint firstItem="Yxu-gT-xrF" firstAttribute="top" secondItem="08f-Tm-fLN" secondAttribute="bottom" constant="1" id="ZyF-m2-gFH"/>
                             <constraint firstItem="woV-VJ-5Il" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leading" id="ab1-H8-lqe"/>
+                            <constraint firstItem="Yxu-gT-xrF" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leading" id="bbH-IR-5Dk"/>
+                            <constraint firstItem="kfz-5B-MqF" firstAttribute="top" secondItem="9n2-wK-dTC" secondAttribute="bottom" constant="80" id="c47-4z-WNF"/>
+                            <constraint firstAttribute="trailing" secondItem="Yxu-gT-xrF" secondAttribute="trailing" id="eMs-rN-JtE"/>
                             <constraint firstItem="woV-VJ-5Il" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="hqQ-7q-g4A"/>
-                            <constraint firstItem="08f-Tm-fLN" firstAttribute="centerX" secondItem="Yxu-gT-xrF" secondAttribute="centerX" id="lEd-uA-0mj"/>
+                            <constraint firstItem="08f-Tm-fLN" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="jyg-dj-NkF"/>
                         </constraints>
                     </view>
                     <connections>

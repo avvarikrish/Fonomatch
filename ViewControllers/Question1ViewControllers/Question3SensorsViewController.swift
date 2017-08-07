@@ -24,7 +24,6 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     var dateSelected: [String] = ["2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        print (realDevices3)
         self.datePickerView.isHidden = true
         if realDevices3.count == 1 {
         matchingDevices2.text = "You match:   " + String (realDevices3.count) + " device"
@@ -66,9 +65,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         self.dateTextField.text = self.dateSelected[row]
         self.datePickerView.isHidden = false
-        userDateSelected = dateSelected[row]
-        print (userDateSelected)
-        
+        userDateSelected = dateSelected[row]        
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         

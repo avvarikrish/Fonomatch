@@ -33,6 +33,9 @@
 		2DB5EDDB1F352A12005C7A82 /* croppedswipeleft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */; };
 		2DB5EDDD1F352A1A005C7A82 /* croppedswiperight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDC1F352A1A005C7A82 /* croppedswiperight.gif */; };
 		2DB5EDDF1F352F78005C7A82 /* coloredgifleft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDE1F352F78005C7A82 /* coloredgifleft.gif */; };
+		2DB5EDE11F37F176005C7A82 /* amazon-logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDE01F37F176005C7A82 /* amazon-logo_black.png */; };
+		2DB5EDE31F38C55C005C7A82 /* amazon-logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDE21F38C55C005C7A82 /* amazon-logo_white.png */; };
+		2DB5EDE51F38CF6D005C7A82 /* rsz_amazon-logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDE41F38CF6D005C7A82 /* rsz_amazon-logo_white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = croppedswipeleft.gif; path = ../../../Downloads/croppedswipeleft.gif; sourceTree = "<group>"; };
 		2DB5EDDC1F352A1A005C7A82 /* croppedswiperight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = croppedswiperight.gif; path = ../../../Downloads/croppedswiperight.gif; sourceTree = "<group>"; };
 		2DB5EDDE1F352F78005C7A82 /* coloredgifleft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = coloredgifleft.gif; path = ../../../Downloads/coloredgifleft.gif; sourceTree = "<group>"; };
+		2DB5EDE01F37F176005C7A82 /* amazon-logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "amazon-logo_black.png"; path = "../../../Downloads/amazon-logo_black.png"; sourceTree = "<group>"; };
+		2DB5EDE21F38C55C005C7A82 /* amazon-logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "amazon-logo_white.png"; path = "../../../Downloads/amazon-logo_white.png"; sourceTree = "<group>"; };
+		2DB5EDE41F38CF6D005C7A82 /* rsz_amazon-logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rsz_amazon-logo_white.png"; path = "../../../Downloads/rsz_amazon-logo_white.png"; sourceTree = "<group>"; };
 		5F203EF5CBAFB9EFB44532F4 /* Pods_RealPhoneMatcher1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealPhoneMatcher1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AD47C5A1D53EB141569982 /* Pods-RealPhoneMatcher1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealPhoneMatcher1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealPhoneMatcher1/Pods-RealPhoneMatcher1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +144,9 @@
 				2D5CC4C21F181288004327B9 /* LaunchScreen.storyboard */,
 				2DB5EDDE1F352F78005C7A82 /* coloredgifleft.gif */,
 				2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */,
+				2DB5EDE21F38C55C005C7A82 /* amazon-logo_white.png */,
+				2DB5EDE41F38CF6D005C7A82 /* rsz_amazon-logo_white.png */,
+				2DB5EDE01F37F176005C7A82 /* amazon-logo_black.png */,
 				2DB5EDDC1F352A1A005C7A82 /* croppedswiperight.gif */,
 				2D5CC4BD1F181288004327B9 /* Main.storyboard */,
 				2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */,
@@ -229,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB5EDE31F38C55C005C7A82 /* amazon-logo_white.png in Resources */,
 				2D6295111F201D4900C1D058 /* Question3Dates.storyboard in Resources */,
 				2DB5ED991F269F7B005C7A82 /* Question4TalkTime.storyboard in Resources */,
 				2DB5EDDB1F352A12005C7A82 /* croppedswipeleft.gif in Resources */,
+				2DB5EDE51F38CF6D005C7A82 /* rsz_amazon-logo_white.png in Resources */,
 				2D564BEF1F1C4B020082C77A /* Question1.storyboard in Resources */,
 				2DB5ED9F1F28FCE4005C7A82 /* ListOfDevices.storyboard in Resources */,
 				2D5CC4C41F181288004327B9 /* LaunchScreen.storyboard in Resources */,
@@ -239,6 +250,7 @@
 				2DB5EDDF1F352F78005C7A82 /* coloredgifleft.gif in Resources */,
 				2DB5EDA31F2949C8005C7A82 /* TestStoryboard.storyboard in Resources */,
 				2DB5EDDD1F352A1A005C7A82 /* croppedswiperight.gif in Resources */,
+				2DB5EDE11F37F176005C7A82 /* amazon-logo_black.png in Resources */,
 				2D5CC4C11F181288004327B9 /* Assets.xcassets in Resources */,
 				2D5CC4BF1F181288004327B9 /* Main.storyboard in Resources */,
 			);

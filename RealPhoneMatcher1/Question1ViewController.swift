@@ -58,8 +58,6 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         self.question1TextBox.text = self.list[row]
         self.question1DropDown.isHidden = false
         valueSelected = list[row]
-        print (valueSelected)
-        
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         

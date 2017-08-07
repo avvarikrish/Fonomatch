@@ -12,11 +12,13 @@ import SwiftyJSON
 class TransitionViewController: UIViewController {
     var realDevices5 : [JSON] = []
     @IBOutlet weak var swipeRight: UIImageView!
+    @IBOutlet weak var matchingDevices5: UILabel!
     @IBOutlet weak var swipeLeft: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         swipeRight.loadGif(name: "croppedswiperight")
         swipeLeft.loadGif(name: "croppedswipeleft")
+        matchingDevices5.text = "You match:  " + String (realDevices5.count) + " devices in total"
         // Do any additional setup after loading the view.
     }
 

@@ -28,7 +28,6 @@ class ListOfDevicesTableViewController : UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        print (realDevices6)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -37,15 +36,13 @@ class ListOfDevicesTableViewController : UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MGSwipeTableCell
         cell.textLabel?.textColor = UIColor.orange
         cell.textLabel!.text = realDevices6[indexPath.row]["DeviceName"].stringValue
-        cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"amazonlogo.png"), backgroundColor: .white) { (sender: MGSwipeTableCell!) -> Bool in
-            print ("Amazon button clicked")
+        cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"rsz_amazon-logo_white"), backgroundColor: .white) { (sender: MGSwipeTableCell!) -> Bool in
             let amazonDevice = self.realDevices6[indexPath.row]["DeviceName"].stringValue
             var amazonDeviceArray = amazonDevice.components(separatedBy: " ")
             var realAmazonDeviceArray = ""
             for x in 0...amazonDeviceArray.count-1 {
                 realAmazonDeviceArray += amazonDeviceArray[x] + "+"
             }
-            print (realAmazonDeviceArray)
             UIApplication.shared.openURL(NSURL(string: "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=\(realAmazonDeviceArray)")! as URL)
             return true}]
         return cell

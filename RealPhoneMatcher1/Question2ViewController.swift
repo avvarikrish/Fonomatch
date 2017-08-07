@@ -34,8 +34,8 @@ class Question2ViewController: UIViewController {
             sizeRange.textColor = .green
             sizeRange.text = "Valid Range"
         } else {
-            sizeRange.textColor = .red
-            sizeRange.text = "Invalid Range. No devices will be shown"
+            sizeRange.textColor = UIColor(red:0.95, green:0.03, blue:0.02, alpha:1.0)
+            sizeRange.text = "Invalid Range"
         }
     }
     
@@ -45,8 +45,8 @@ class Question2ViewController: UIViewController {
             sizeRange.textColor = .green
             sizeRange.text = "Valid Range"
         } else {
-            sizeRange.textColor = .red
-            sizeRange.text = "Invalid Range. No devices will be shown"
+            sizeRange.textColor = UIColor(red:0.95, green:0.03, blue:0.02, alpha:1.0)
+            sizeRange.text = "Invalid Range"
         }
     }
     @IBAction func continue2DisplaySize(_ sender: UIButton) {
@@ -55,7 +55,6 @@ class Question2ViewController: UIViewController {
         userMaxSizeValue = String(Int(displayMaxSizeSliderOutlet.value))
         sliderLabel.text = (userSizeValue)
         maxSizeSliderLabel.text = (userMaxSizeValue)
-        print ("\(userSizeValue) - \(userMaxSizeValue)")
         self.performSegue(withIdentifier: "segueToDates", sender: self)
         } else {
             let popOverVC = UIStoryboard(name: "Question2DisplaySize", bundle: nil).instantiateViewController(withIdentifier: "SizePopUp") as! PopUpViewController

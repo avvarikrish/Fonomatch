@@ -72,18 +72,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-dY-FF7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-dY-FF7">
                                 <rect key="frame" x="263" y="25" width="42" height="159"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="View">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="19"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="viewDevices1:" destination="Yaz-fa-Jz9" eventType="touchUpInside" id="6Nk-j0-Euc"/>
@@ -96,18 +89,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-sU-qdW">
-                                <rect key="frame" x="129" y="460" width="62" height="30"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Continue">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-sU-qdW">
+                                <rect key="frame" x="127" y="456" width="66" height="32"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continue2DisplaySize:" destination="Yaz-fa-Jz9" eventType="touchUpInside" id="21b-UA-tDo"/>
@@ -120,7 +106,7 @@
                                     <constraint firstAttribute="width" constant="218" id="reL-6W-Ltr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.30588235294117649" green="0.72941176470588232" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U00-ck-5cF">
@@ -137,7 +123,6 @@
                             <constraint firstItem="Ywh-8g-Fl0" firstAttribute="leading" secondItem="EDg-hd-7Me" secondAttribute="trailing" constant="8" id="3gO-Lu-iDl"/>
                             <constraint firstItem="EDg-hd-7Me" firstAttribute="top" secondItem="Y0r-gi-Irz" secondAttribute="bottom" constant="83" id="6VJ-oh-acw"/>
                             <constraint firstItem="qFI-vR-y6j" firstAttribute="leading" secondItem="wY3-8h-lg5" secondAttribute="leading" constant="20" symbolic="YES" id="ENn-oO-1gR"/>
-                            <constraint firstItem="Uby-sU-qdW" firstAttribute="top" secondItem="Ywh-8g-Fl0" secondAttribute="bottom" constant="70" id="G8W-Tn-yy8"/>
                             <constraint firstItem="Iv8-Ei-O8W" firstAttribute="centerX" secondItem="vVo-m2-dqg" secondAttribute="centerX" id="HkJ-MR-Dn3"/>
                             <constraint firstItem="BGy-dY-FF7" firstAttribute="top" relation="lessThanOrEqual" secondItem="OQm-eX-OGT" secondAttribute="bottom" constant="5" id="KIN-fG-QJQ"/>
                             <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="BGy-dY-FF7" secondAttribute="trailing" id="MFT-Wq-Shk"/>
@@ -160,6 +145,7 @@
                             <constraint firstItem="Ywh-8g-Fl0" firstAttribute="leading" secondItem="j8x-Rm-Vaa" secondAttribute="leading" constant="18" id="oKh-jE-2Jx"/>
                             <constraint firstItem="Y0r-gi-Irz" firstAttribute="top" secondItem="Iv8-Ei-O8W" secondAttribute="bottom" constant="50" id="q2c-yo-V2w"/>
                             <constraint firstItem="Iv8-Ei-O8W" firstAttribute="centerX" secondItem="j8x-Rm-Vaa" secondAttribute="centerX" id="vhD-M1-Ahu"/>
+                            <constraint firstItem="yeE-08-Pdc" firstAttribute="top" secondItem="Uby-sU-qdW" secondAttribute="bottom" constant="80" id="xil-cm-Rki"/>
                         </constraints>
                     </view>
                     <connections>
@@ -211,38 +197,32 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a valid range." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEA-zw-X4h">
                                         <rect key="frame" x="0.0" y="59" width="300" height="94"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.8980392157" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="nEA-zw-X4h" firstAttribute="leading" secondItem="hWr-Ot-6U5" secondAttribute="leading" id="9sy-Gx-isv"/>
                                     <constraint firstItem="nEA-zw-X4h" firstAttribute="top" secondItem="hWr-Ot-6U5" secondAttribute="top" constant="59" id="GqS-cP-mO6"/>
                                     <constraint firstAttribute="width" constant="300" id="K0A-Fz-a4Q"/>
-                                    <constraint firstItem="nEA-zw-X4h" firstAttribute="centerX" secondItem="hWr-Ot-6U5" secondAttribute="centerX" id="Pc0-CH-c6z"/>
                                     <constraint firstAttribute="trailing" secondItem="nEA-zw-X4h" secondAttribute="trailing" id="beu-Iu-6Qz"/>
                                     <constraint firstAttribute="height" constant="300" id="cLq-C4-SMX"/>
                                     <constraint firstAttribute="bottom" secondItem="nEA-zw-X4h" secondAttribute="bottom" constant="147" id="jh0-kj-Qh6"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H08-Oo-cfN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H08-Oo-cfN">
                                 <rect key="frame" x="137" y="326" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="jYd-JP-lLs"/>
                                     <constraint firstAttribute="height" constant="30" id="yQu-t3-mDx"/>
                                 </constraints>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Close">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                <integer key="NSUnderline" value="1"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="closePopUp:" destination="o1u-mP-g6i" eventType="touchUpInside" id="zrt-zY-qkw"/>

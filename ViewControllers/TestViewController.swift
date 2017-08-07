@@ -29,21 +29,20 @@ class TestViewController: UIViewController {
     var colorsNameLabel = ""
     var talkTimeNameLabel = ""
     var sizeNameLabel = ""
-    var realBrandNameLabel = "Brand:"
     var myMutableString = NSMutableAttributedString()
     override func viewDidLoad() {
         super.viewDidLoad()
         testLabel.text = deviceNameLabel + ":"
-        realBrandLabel.text = "Brand: " + brandNameLabel
-        realStatusLabel.text = "Status: " + statusNameLabel
+        realBrandLabel.text = " Brand: " + brandNameLabel
+        realStatusLabel.text = " Status: " + statusNameLabel
         realDimensionsLabel.lineBreakMode = .byWordWrapping
-        realDimensionsLabel.text = "Dimensions: " + dimensionsNameLabel
-        realWeightLabel.text = "Weight: " + weightNameLabel
+        realDimensionsLabel.text = " Dimensions: " + dimensionsNameLabel
+        realWeightLabel.text = " Weight: " + weightNameLabel
         realResolutionNameLabel = resolutionNameLabel.components(separatedBy: " (")
-        realResolutionLabel.text = "Resolution: " + realResolutionNameLabel[0]
-        realColorsLabel.text = "Colors: " + colorsNameLabel
-        realTalkTimeLabel.text = "Talk Time: " + talkTimeNameLabel
-        realSizeLabel.text = "Size: " + sizeNameLabel
+        realResolutionLabel.text = " Resolution: " + realResolutionNameLabel[0]
+        realColorsLabel.text = " Colors: " + colorsNameLabel
+        realTalkTimeLabel.text = " Talk Time: " + talkTimeNameLabel
+        realSizeLabel.text = " Size: " + sizeNameLabel
         // Do any additional setup after loading the view.
     }
 
