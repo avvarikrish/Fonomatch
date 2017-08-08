@@ -24,7 +24,11 @@ class Question2ViewController: UIViewController {
     @IBOutlet weak var matchingDevices1: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        matchingDevices1.text = "You match:   " + String(realDevices2.count) + " devices"
+        if realDevices2.count == 1 {
+            matchingDevices1.text = "You match:  " + String (realDevices2.count) + " device"
+        } else {
+            matchingDevices1.text = "You match:  " + String (realDevices2.count) + " devices"
+        }
         question2Label.text = "Indicate a size range for screen display."
     }
     @IBAction func displaySizeSlider(_ sender: UISlider) {

@@ -26,9 +26,9 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
         super.viewDidLoad()
         self.datePickerView.isHidden = true
         if realDevices3.count == 1 {
-        matchingDevices2.text = "You match:   " + String (realDevices3.count) + " device"
+        matchingDevices2.text = "You match:  " + String (realDevices3.count) + " device"
         } else {
-            matchingDevices2.text = "You match:   " + String (realDevices3.count) + " devices"
+            matchingDevices2.text = "You match:  " + String (realDevices3.count) + " devices"
         }
         // Do any additional setup after loading the view.
     }

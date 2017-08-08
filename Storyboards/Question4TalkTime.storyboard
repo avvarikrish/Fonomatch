@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AlL-GN-73I">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,11 +21,11 @@
                         <viewControllerLayoutGuide type="bottom" id="SnK-tK-PDZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mVj-vS-ofZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 hours without charge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDM-7e-Exy">
-                                <rect key="frame" x="60" y="303" width="200" height="21"/>
+                                <rect key="frame" x="284" y="759" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pwZ-vf-z3V"/>
                                     <constraint firstAttribute="width" constant="200" id="skL-Px-Z0P"/>
@@ -34,8 +34,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-th-Us6">
-                                <rect key="frame" x="16" y="30" width="218" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-th-Us6">
+                                <rect key="frame" x="20" y="30" width="218" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="uM1-5f-jqH"/>
                                     <constraint firstAttribute="width" constant="218" id="ylG-6G-wg1"/>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Na-O2-Xv2">
-                                <rect key="frame" x="108" y="176" width="104" height="73"/>
+                                <rect key="frame" x="332" y="176" width="104" height="529"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="gn0-xs-cY5"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-8s-zvb">
-                                <rect key="frame" x="117" y="458" width="86" height="30"/>
+                                <rect key="frame" x="341" y="914" width="86" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="FRP-KR-KsJ"/>
                                     <constraint firstAttribute="height" constant="30" id="ex3-wP-B47"/>
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicate the minimum battery life." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-lA-Z6H">
-                                <rect key="frame" x="0.0" y="115" width="320" height="31"/>
+                                <rect key="frame" x="0.0" y="115" width="768" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="cKq-9Y-ftr"/>
                                 </constraints>
@@ -77,7 +77,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-aP-A57">
-                                <rect key="frame" x="254" y="25" width="50" height="35"/>
+                                <rect key="frame" x="696" y="25" width="42" height="35"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="View">
                                     <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,8 +96,7 @@
                             <constraint firstItem="IQv-th-Us6" firstAttribute="top" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="10" id="JEs-BR-vPS"/>
                             <constraint firstItem="fzX-lA-Z6H" firstAttribute="leading" secondItem="mVj-vS-ofZ" secondAttribute="leading" id="JoE-jp-4HF"/>
                             <constraint firstItem="3Na-O2-Xv2" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="LHg-ef-tEu"/>
-                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="Q7d-aP-A57" secondAttribute="trailing" id="Njb-Nd-eJh"/>
-                            <constraint firstItem="Q7d-aP-A57" firstAttribute="leading" secondItem="IQv-th-Us6" secondAttribute="trailing" constant="20" id="Ou9-C2-dph"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q7d-aP-A57" secondAttribute="trailing" constant="10" id="Njb-Nd-eJh"/>
                             <constraint firstItem="Q7d-aP-A57" firstAttribute="baseline" secondItem="IQv-th-Us6" secondAttribute="firstBaseline" id="Z3u-2L-bfO"/>
                             <constraint firstItem="7uL-8s-zvb" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="aq6-Hr-p4W"/>
                             <constraint firstItem="QDM-7e-Exy" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="gdK-ps-GuM"/>

@@ -7,47 +7,26 @@
 //
 
 import UIKit
+import Crashlytics
 
 class tutorialViewController: UIViewController {
-    let tutorialQuestions = ["What phone size do you prefer?"]
-    let tutorialAnswers = ["Greater than 5 inches", "Less than 5 inches"]
-    var currentQuestion = 0
-    var tutorialUserAnswer = 0
-    @IBAction func tutorialAnswersAction(_ sender: AnyObject) {
-        if ((sender).tag == 1) {
-            
-            print ("Large phone chosen")
-        } else {
-            print ("Small phone chosen ")
-        }
-    }
-    @IBOutlet weak var tutorialQuestionLabel: UILabel!
+    
     override func viewDidAppear(_ animated: Bool) {
-        tutorialMatchingPhone()
     }
-    func tutorialMatchingPhone() {
-        tutorialQuestionLabel.text = tutorialQuestions [currentQuestion]
-        var button: UIButton = UIButton()
-        for i in 1...2 {
-            button = view.viewWithTag(i) as! UIButton
-            let x = 1
-            if (x == i) {
-                button.setTitle(tutorialAnswers[currentQuestion], for: .normal)
-            } else {
-                button.setTitle(tutorialAnswers[x], for: .normal)
-            }
-        }
-    }
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        
-    }
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 5
-    }
+    
+    
     //hello
     override func viewDidLoad() {
         super.viewDidLoad()
+        let button = UIButton(type: .roundedRect)
+        button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
+        button.setTitle("Crash", for: [])
+        button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
+        view.addSubview(button)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func crashButtonTapped(_ sender: AnyObject) {
+        Crashlytics.sharedInstance().crash()
     }
     
     override func didReceiveMemoryWarning() {

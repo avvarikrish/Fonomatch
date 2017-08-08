@@ -20,7 +20,11 @@ class Question4TalkTimeViewController: UIViewController {
     @IBOutlet weak var matchingPhones3: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        matchingPhones3.text = "You match:   " + String(realDevices4.count) + " devices"
+        if realDevices4.count == 1 {
+            matchingPhones3.text = "You match:  " + String (realDevices4.count) + " device"
+        } else {
+            matchingPhones3.text = "You match:  " + String (realDevices4.count) + " devices"
+        }
         // Do any additional setup after loading the view.
     }
 

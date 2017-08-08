@@ -10,4 +10,6 @@ target 'RealPhoneMatcher1' do
 	pod 'SwiftyJSON'
 	pod 'MGSwipeTableCell'
 	pod 'NVActivityIndicatorView'
+	pod 'Fabric'
+	pod 'Crashlytics'
 end

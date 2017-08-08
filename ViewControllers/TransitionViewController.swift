@@ -18,7 +18,11 @@ class TransitionViewController: UIViewController {
         super.viewDidLoad()
         swipeRight.loadGif(name: "croppedswiperight")
         swipeLeft.loadGif(name: "croppedswipeleft")
-        matchingDevices5.text = "You match:  " + String (realDevices5.count) + " devices in total"
+        if realDevices5.count == 1 {
+            matchingDevices5.text = "You match:   " + String (realDevices5.count) + " device in total"
+        } else {
+            matchingDevices5.text = "You match:   " + String (realDevices5.count) + " devices in total"
+        }
         // Do any additional setup after loading the view.
     }
 
