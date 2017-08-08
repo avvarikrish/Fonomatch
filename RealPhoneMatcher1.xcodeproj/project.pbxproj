@@ -36,6 +36,7 @@
 		2DB5EDE51F38CF6D005C7A82 /* rsz_amazon-logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDE41F38CF6D005C7A82 /* rsz_amazon-logo_white.png */; };
 		2DB5EDE81F38E820005C7A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDE71F38E820005C7A82 /* Main.storyboard */; };
 		2DB5EDEA1F3933EE005C7A82 /* ListOfDevices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDE91F3933EE005C7A82 /* ListOfDevices.storyboard */; };
+		2DB5EDEC1F3A3C23005C7A82 /* appicon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDEB1F3A3C23005C7A82 /* appicon1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		2DB5EDE41F38CF6D005C7A82 /* rsz_amazon-logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rsz_amazon-logo_white.png"; path = "../../../Downloads/rsz_amazon-logo_white.png"; sourceTree = "<group>"; };
 		2DB5EDE71F38E820005C7A82 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		2DB5EDE91F3933EE005C7A82 /* ListOfDevices.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListOfDevices.storyboard; sourceTree = "<group>"; };
+		2DB5EDEB1F3A3C23005C7A82 /* appicon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon1.png; path = ../../../Documents/appicon1.png; sourceTree = "<group>"; };
 		5F203EF5CBAFB9EFB44532F4 /* Pods_RealPhoneMatcher1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealPhoneMatcher1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AD47C5A1D53EB141569982 /* Pods-RealPhoneMatcher1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealPhoneMatcher1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealPhoneMatcher1/Pods-RealPhoneMatcher1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 				2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */,
 				2DB5EDE71F38E820005C7A82 /* Main.storyboard */,
 				2D6294FF1F1EB2E600C1D058 /* Question2DisplaySize.storyboard */,
+				2DB5EDEB1F3A3C23005C7A82 /* appicon1.png */,
 				2DB5ED981F269F7B005C7A82 /* Question4TalkTime.storyboard */,
 				2D564BEE1F1C4B020082C77A /* Question1.storyboard */,
 			);
@@ -249,6 +252,7 @@
 				2D5CC4C41F181288004327B9 /* LaunchScreen.storyboard in Resources */,
 				2DB5EDE81F38E820005C7A82 /* Main.storyboard in Resources */,
 				2D6295001F1EB2E600C1D058 /* Question2DisplaySize.storyboard in Resources */,
+				2DB5EDEC1F3A3C23005C7A82 /* appicon1.png in Resources */,
 				2DB5EDDF1F352F78005C7A82 /* coloredgifleft.gif in Resources */,
 				2DB5EDA31F2949C8005C7A82 /* TestStoryboard.storyboard in Resources */,
 				2DB5EDDD1F352A1A005C7A82 /* croppedswiperight.gif in Resources */,
