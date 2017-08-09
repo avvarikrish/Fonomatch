@@ -12,15 +12,17 @@ import Alamofire
 
 
 class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    @IBOutlet weak var continue0Button: UIButton!
     @IBOutlet weak var question1TextView: UITextView!
     var valueSelected = String()
     var realDevices: JSON = []
     @IBOutlet weak var question1TextBox: UITextField!
     @IBOutlet weak var question1DropDown: UIPickerView!
     var list: [String] = ["Acer", "Alcatel", "Allview", "Apple", "Archos", "Asus", "Blackberry", "Blu", "BQ", "Celkon", "Coolpad", "Dell", "Energizer", "Garmin", "Google", "HP", "HTC", "Huawei", "I-Mobile", "IceMobile", "Intex", "Jolla", "Karbonn", "Kyocera", "Lava", "Leeco", "Lenovo", "LG", "Maxwest", "Meizu", "Micromax", "Microsoft", "Modu", "Motorola", "Nec", "NIU", "Nokia", "Nvidia", "Oneplus", "Oppo", "Orange", "Palm", "Panasonic", "Pantech", "Parla", "Plum", "Posh", "Prestigio", "Qmobile", "Samsung", "Sharp", "Sonim", "Sony", "Spice", "Toshiba", "Unnecto", "Vertu", "Vivo", "Vodafone", "Wiko", "Xiaomi", "Xolo", "Yezz", "Yota", "Yu", "ZTE"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        continue0Button.layer.cornerRadius=5
         self.question1DropDown.isHidden = true
         question1TextView.text = "Select a brand"
         question1TextView.isUserInteractionEnabled = false
@@ -82,9 +84,11 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 if let value = response.result.value {
                     let json = JSON(value)
                     self.realDevices = json[]
-                     self.performSegue(withIdentifier: "segueToSize", sender: self)
+                    self.performSegue(withIdentifier: "segueToSize", sender: self)
                 }
             case .failure (let error):
+                var allarme = UIAlertView(title: "Error", message: "Something went wrong with the internet. Please try again later.", delegate: self, cancelButtonTitle: "OK")
+                allarme.show()
                 print (error)
             }
         }
@@ -94,8 +98,8 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToSize" {
             if let secondViewController = segue.destination as? Question2ViewController {
-            secondViewController.realDevices2 = self.realDevices
-        }
+                secondViewController.realDevices2 = self.realDevices
+            }
         }
     }
 }

@@ -18,8 +18,12 @@ class Question4TalkTimeViewController: UIViewController {
     @IBOutlet weak var talkTimeSlider: UISlider!
     @IBOutlet weak var talkTimeLabel: UILabel!
     @IBOutlet weak var matchingPhones3: UILabel!
+    @IBOutlet weak var continue3Button: UIButton!
+    @IBOutlet weak var view3Button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view3Button.layer.cornerRadius=5
+        continue3Button.layer.cornerRadius=5
         if realDevices4.count == 1 {
             matchingPhones3.text = "You match:  " + String (realDevices4.count) + " device"
         } else {
@@ -27,7 +31,7 @@ class Question4TalkTimeViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func talkTimeActionSlider(_ sender: UISlider) {
         talkTimeLabel.text = String(Int(talkTimeSlider.value)) + " hours without charge"
     }
@@ -41,7 +45,7 @@ class Question4TalkTimeViewController: UIViewController {
         userTalkTimeValue = String(Int(talkTimeSlider.value))
         self.performSegue(withIdentifier: "segueToList", sender: self)
     }
-
+    
     @IBAction func view3AllDevices(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segueToRealList", sender: self)
     }
@@ -72,13 +76,13 @@ class Question4TalkTimeViewController: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

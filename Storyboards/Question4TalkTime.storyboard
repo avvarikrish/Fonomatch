@@ -40,8 +40,8 @@
                                     <constraint firstAttribute="height" constant="25" id="uM1-5f-jqH"/>
                                     <constraint firstAttribute="width" constant="218" id="ylG-6G-wg1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Na-O2-Xv2">
@@ -54,9 +54,10 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-8s-zvb">
-                                <rect key="frame" x="341" y="914" width="86" height="30"/>
+                                <rect key="frame" x="334" y="914" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="86" id="FRP-KR-KsJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="FRP-KR-KsJ"/>
                                     <constraint firstAttribute="height" constant="30" id="ex3-wP-B47"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
@@ -77,7 +78,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-aP-A57">
-                                <rect key="frame" x="696" y="25" width="42" height="35"/>
+                                <rect key="frame" x="688" y="25" width="50" height="35"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="irG-pC-noz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="View">
                                     <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,9 +112,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="continue3Button" destination="7uL-8s-zvb" id="fqa-1M-VN6"/>
                         <outlet property="matchingPhones3" destination="IQv-th-Us6" id="BZE-Ir-KPx"/>
                         <outlet property="talkTimeLabel" destination="QDM-7e-Exy" id="dvj-wB-Xkr"/>
                         <outlet property="talkTimeSlider" destination="3Na-O2-Xv2" id="G3k-oX-sUZ"/>
+                        <outlet property="view3Button" destination="Q7d-aP-A57" id="qDT-SB-JhM"/>
                         <segue destination="eYE-l7-o7O" kind="show" identifier="segueToList" id="4Iw-5O-U3o"/>
                         <segue destination="KFf-IJ-v48" kind="show" identifier="segueToRealList" id="FZP-J4-97o"/>
                     </connections>

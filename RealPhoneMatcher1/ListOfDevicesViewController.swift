@@ -29,7 +29,13 @@ class ListOfDevicesTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let reuseIdentifier = "listOfDevicesTableViewCell"
@@ -45,6 +51,13 @@ class ListOfDevicesTableViewController : UITableViewController {
             }
             UIApplication.shared.openURL(NSURL(string: "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=\(realAmazonDeviceArray)")! as URL)
             return true}]
+        if( indexPath.row % 2 == 0){
+            cell.backgroundColor=UIColorFromHex(rgbValue: 0x3B728C);
+        }
+        else{
+            cell.backgroundColor = UIColorFromHex(rgbValue: 0x36687F)
+        }
+        cell.detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
         return cell
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -57,13 +70,6 @@ class ListOfDevicesTableViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return realDevices6.count
     }
-    //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    //        let cell = tableView.dequeueReusableCell(withIdentifier: "listOfDevicesTableViewCell", for: indexPath)
-    //        cell.textLabel?.textColor = UIColor.orange
-    //        cell.textLabel?.text = realDevices5[indexPath.row]["DeviceName"].stringValue
-    //        return cell
-    //    }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         deviceLabel = realDevices6[indexPath.row]["DeviceName"].stringValue
         brandLabel = realDevices6[indexPath.row]["Brand"].stringValue
@@ -75,19 +81,11 @@ class ListOfDevicesTableViewController : UITableViewController {
         colorsLabel = realDevices6[indexPath.row]["colors"].stringValue
         talkTimeLabel = realDevices6[indexPath.row]["talk_time"].stringValue
         sizeLabel = realDevices6[indexPath.row]["size"].stringValue
-        // Segue to the second view controller
         self.performSegue(withIdentifier: "segueToProperties", sender: self)
-//        let popOverVC = UIStoryboard(name: "ListOfDevices", bundle: nil).instantiateViewController(withIdentifier: "PropertiesPopUp") as! PopUpViewController2
-//        self.addChildViewController(popOverVC)
-//        popOverVC.view.frame = self.view.frame
-//        self.view.addSubview(popOverVC.view)
-//        popOverVC.didMove(toParentViewController: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // get a reference to the second view controller
         if segue.identifier == "segueToProperties" {
             if let sixthViewController = segue.destination as? TestViewController {
-                // set a variable in the second view controller with the data to pass
                 sixthViewController.deviceNameLabel = deviceLabel
                 sixthViewController.brandNameLabel = brandLabel
                 sixthViewController.statusNameLabel = statusLabel
@@ -123,6 +121,7 @@ class ListOfDevicesTableViewController : UITableViewController {
         return false
         
     }
+    
     
     
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VsX-dj-T82">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,13 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="kfz-5B-MqF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5H2-cr-4BS">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n2-wK-dTC">
-                                <rect key="frame" x="474" y="1256" width="76" height="30"/>
+                                <rect key="frame" x="110" y="458" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="hC0-7L-8iW"/>
+                                    <constraint firstAttribute="width" constant="100" id="hC0-7L-8iW"/>
                                     <constraint firstAttribute="height" constant="30" id="n3x-WX-V6d"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
@@ -37,17 +38,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe6-W4-43e">
-                                <rect key="frame" x="20" y="25" width="218" height="25"/>
+                                <rect key="frame" x="16" y="29" width="218" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="AHi-3y-47q"/>
                                     <constraint firstAttribute="height" constant="25" id="NyA-5J-nq8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.6277327747" blue="0.43668816719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMS-QC-n06">
-                                <rect key="frame" x="952" y="24" width="42" height="34"/>
+                                <rect key="frame" x="244" y="23" width="50" height="35"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="r0t-JH-rGy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="View">
                                     <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +62,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Indicate the earliest year of availability." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woV-VJ-5Il">
-                                <rect key="frame" x="365" y="89" width="294" height="31"/>
+                                <rect key="frame" x="13" y="89" width="294" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="VJU-S7-TyQ"/>
                                 </constraints>
@@ -66,11 +71,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08f-Tm-fLN">
-                                <rect key="frame" x="462" y="145" width="100" height="30"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.32156862749999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="85" y="145" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.46666666670000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8g8-gJ-uXd"/>
-                                    <constraint firstAttribute="width" constant="100" id="IxI-AB-Aar"/>
+                                    <constraint firstAttribute="width" constant="150" id="IxI-AB-Aar"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -79,8 +84,8 @@
                                     <outlet property="delegate" destination="VsX-dj-T82" id="XnP-sU-wle"/>
                                 </connections>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-gT-xrF">
-                                <rect key="frame" x="0.0" y="575" width="1024" height="216"/>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-gT-xrF">
+                                <rect key="frame" x="0.0" y="176" width="320" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="OeV-Ld-sgd"/>
                                 </constraints>
@@ -94,10 +99,10 @@
                         <constraints>
                             <constraint firstItem="08f-Tm-fLN" firstAttribute="top" secondItem="woV-VJ-5Il" secondAttribute="bottom" constant="25" id="0He-El-tC7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uMS-QC-n06" secondAttribute="trailing" constant="10" id="2gl-jd-uN3"/>
+                            <constraint firstItem="Yxu-gT-xrF" firstAttribute="top" secondItem="08f-Tm-fLN" secondAttribute="bottom" constant="1" id="AaR-dr-QCb"/>
                             <constraint firstItem="woV-VJ-5Il" firstAttribute="top" secondItem="Pe6-W4-43e" secondAttribute="bottom" constant="35" id="FHc-mO-t6x"/>
                             <constraint firstItem="Yxu-gT-xrF" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="J2G-Xz-Gp9"/>
                             <constraint firstItem="Pe6-W4-43e" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leadingMargin" id="NS0-ga-NcI"/>
-                            <constraint firstItem="Yxu-gT-xrF" firstAttribute="centerY" secondItem="5H2-cr-4BS" secondAttribute="centerY" id="VX5-JN-tcl"/>
                             <constraint firstItem="uMS-QC-n06" firstAttribute="top" relation="lessThanOrEqual" secondItem="1NH-cb-wLL" secondAttribute="bottom" constant="5" id="W4F-uQ-JVW"/>
                             <constraint firstItem="9n2-wK-dTC" firstAttribute="centerX" secondItem="5H2-cr-4BS" secondAttribute="centerX" id="W8f-Hh-KEa"/>
                             <constraint firstItem="Yxu-gT-xrF" firstAttribute="leading" secondItem="5H2-cr-4BS" secondAttribute="leading" id="bbH-IR-5Dk"/>
@@ -109,9 +114,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="continue2Button" destination="9n2-wK-dTC" id="8x2-OT-RSF"/>
                         <outlet property="datePickerView" destination="Yxu-gT-xrF" id="lQM-bF-jkU"/>
                         <outlet property="dateTextField" destination="08f-Tm-fLN" id="sRu-h4-Ikv"/>
                         <outlet property="matchingDevices2" destination="Pe6-W4-43e" id="cin-Ti-Pzd"/>
+                        <outlet property="view2Button" destination="uMS-QC-n06" id="15Q-up-FEo"/>
                         <segue destination="JC3-aU-eYV" kind="show" identifier="segueToTalkTime" id="gaG-nw-ihn"/>
                         <segue destination="9f8-tA-eTu" kind="show" identifier="segueToList" id="8wM-52-HxW"/>
                     </connections>

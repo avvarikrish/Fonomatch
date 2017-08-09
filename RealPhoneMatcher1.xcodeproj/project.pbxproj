@@ -24,8 +24,6 @@
 		2DB5ED9B1F26A128005C7A82 /* Question4TalkTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5ED9A1F26A128005C7A82 /* Question4TalkTimeViewController.swift */; };
 		2DB5EDA11F294990005C7A82 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDA01F294990005C7A82 /* TestViewController.swift */; };
 		2DB5EDA31F2949C8005C7A82 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */; };
-		2DB5EDC31F2F9B04005C7A82 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDC21F2F9B04005C7A82 /* PopUpViewController.swift */; };
-		2DB5EDCB1F34FD4A005C7A82 /* PopUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDCA1F34FD4A005C7A82 /* PopUpViewController2.swift */; };
 		2DB5EDCD1F351A7E005C7A82 /* loadGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDCC1F351A7E005C7A82 /* loadGif.swift */; };
 		2DB5EDCF1F351B01005C7A82 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5EDCE1F351B01005C7A82 /* TransitionViewController.swift */; };
 		2DB5EDDB1F352A12005C7A82 /* croppedswipeleft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */; };
@@ -59,8 +57,6 @@
 		2DB5ED9A1F26A128005C7A82 /* Question4TalkTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question4TalkTimeViewController.swift; sourceTree = "<group>"; };
 		2DB5EDA01F294990005C7A82 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2DB5EDA21F2949C8005C7A82 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestStoryboard.storyboard; path = ../ViewControllers/TestStoryboard.storyboard; sourceTree = "<group>"; };
-		2DB5EDC21F2F9B04005C7A82 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		2DB5EDCA1F34FD4A005C7A82 /* PopUpViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController2.swift; sourceTree = "<group>"; };
 		2DB5EDCC1F351A7E005C7A82 /* loadGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadGif.swift; sourceTree = "<group>"; };
 		2DB5EDCE1F351B01005C7A82 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		2DB5EDDA1F352A12005C7A82 /* croppedswipeleft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = croppedswipeleft.gif; path = ../../../Downloads/croppedswipeleft.gif; sourceTree = "<group>"; };
@@ -124,11 +120,9 @@
 			children = (
 				2DB5EDCC1F351A7E005C7A82 /* loadGif.swift */,
 				2DB5EDCE1F351B01005C7A82 /* TransitionViewController.swift */,
-				2DB5EDC21F2F9B04005C7A82 /* PopUpViewController.swift */,
 				2DB5EDA01F294990005C7A82 /* TestViewController.swift */,
 				2DB5ED9A1F26A128005C7A82 /* Question4TalkTimeViewController.swift */,
 				2D6294FB1F1D7EBC00C1D058 /* ListOfDevicesViewController.swift */,
-				2DB5EDCA1F34FD4A005C7A82 /* PopUpViewController2.swift */,
 				2D6295011F1EBB1900C1D058 /* Question2ViewController.swift */,
 				2D564BEC1F1C4AC00082C77A /* Question1ViewController.swift */,
 				2D5CC4BB1F181288004327B9 /* TutorialViewController.swift */,
@@ -335,8 +329,6 @@
 				2DB5EDCD1F351A7E005C7A82 /* loadGif.swift in Sources */,
 				2D6295021F1EBB1900C1D058 /* Question2ViewController.swift in Sources */,
 				2D5CC4BA1F181288004327B9 /* AppDelegate.swift in Sources */,
-				2DB5EDC31F2F9B04005C7A82 /* PopUpViewController.swift in Sources */,
-				2DB5EDCB1F34FD4A005C7A82 /* PopUpViewController2.swift in Sources */,
 				2D62950E1F201D1000C1D058 /* Question3SensorsViewController.swift in Sources */,
 				2DB5ED9B1F26A128005C7A82 /* Question4TalkTimeViewController.swift in Sources */,
 				2DB5EDA11F294990005C7A82 /* TestViewController.swift in Sources */,

@@ -11,22 +11,14 @@ import Crashlytics
 
 class tutorialViewController: UIViewController {
     
+    @IBOutlet weak var continue01Button: UIButton!
     override func viewDidAppear(_ animated: Bool) {
     }
     
-    
-    //hello
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = UIButton(type: .roundedRect)
-        button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
-        button.setTitle("Crash", for: [])
-        button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
-        view.addSubview(button)
+        continue01Button.layer.cornerRadius=5
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    @IBAction func crashButtonTapped(_ sender: AnyObject) {
-        Crashlytics.sharedInstance().crash()
     }
     
     override func didReceiveMemoryWarning() {

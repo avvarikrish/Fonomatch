@@ -18,15 +18,19 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
     var announcedValue = ""
     var realAnnouncedValue: [String] =  []
     var realDevices3: [JSON] = []
+    @IBOutlet weak var view2Button: UIButton!
     @IBOutlet weak var matchingDevices2: UILabel!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var datePickerView: UIPickerView!
+    @IBOutlet weak var continue2Button: UIButton!
     var dateSelected: [String] = ["2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        view2Button.layer.cornerRadius=5
+        continue2Button.layer.cornerRadius=5
         self.datePickerView.isHidden = true
         if realDevices3.count == 1 {
-        matchingDevices2.text = "You match:  " + String (realDevices3.count) + " device"
+            matchingDevices2.text = "You match:  " + String (realDevices3.count) + " device"
         } else {
             matchingDevices2.text = "You match:  " + String (realDevices3.count) + " devices"
         }
@@ -65,7 +69,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         self.dateTextField.text = self.dateSelected[row]
         self.datePickerView.isHidden = false
-        userDateSelected = dateSelected[row]        
+        userDateSelected = dateSelected[row]
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
@@ -101,9 +105,9 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
                             realReleaseDateDevicesArray = releaseDateDevicesArray[2].components(separatedBy: ",")
                             if Int(realReleaseDateDevicesArray[0]) != nil  {
                                 if Int(userDateSelected) != nil {
-                                if Int(userDateSelected)! <= Int (realReleaseDateDevicesArray[0])! {
-                                    fourthViewController.realDevices4.append(device)
-                                }
+                                    if Int(userDateSelected)! <= Int (realReleaseDateDevicesArray[0])! {
+                                        fourthViewController.realDevices4.append(device)
+                                    }
                                 }
                             }
                         }
