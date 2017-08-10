@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AlL-GN-73I">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,11 +21,11 @@
                         <viewControllerLayoutGuide type="bottom" id="SnK-tK-PDZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mVj-vS-ofZ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 hours without charge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDM-7e-Exy">
-                                <rect key="frame" x="284" y="759" width="200" height="21"/>
+                                <rect key="frame" x="87.5" y="234.5" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pwZ-vf-z3V"/>
                                     <constraint firstAttribute="width" constant="200" id="skL-Px-Z0P"/>
@@ -34,8 +34,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-th-Us6">
-                                <rect key="frame" x="20" y="30" width="218" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-th-Us6">
+                                <rect key="frame" x="16" y="30" width="218" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="uM1-5f-jqH"/>
                                     <constraint firstAttribute="width" constant="218" id="ylG-6G-wg1"/>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Na-O2-Xv2">
-                                <rect key="frame" x="332" y="176" width="104" height="529"/>
+                                <rect key="frame" x="135.5" y="174.5" width="104" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="gn0-xs-cY5"/>
                                 </constraints>
@@ -54,10 +54,10 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-8s-zvb">
-                                <rect key="frame" x="334" y="914" width="100" height="30"/>
+                                <rect key="frame" x="112.5" y="355.5" width="150" height="30"/>
                                 <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="FRP-KR-KsJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="FRP-KR-KsJ"/>
                                     <constraint firstAttribute="height" constant="30" id="ex3-wP-B47"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicate the minimum battery life." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-lA-Z6H">
-                                <rect key="frame" x="0.0" y="115" width="768" height="31"/>
+                                <rect key="frame" x="0.0" y="113.5" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="cKq-9Y-ftr"/>
                                 </constraints>
@@ -78,7 +78,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-aP-A57">
-                                <rect key="frame" x="688" y="25" width="50" height="35"/>
+                                <rect key="frame" x="299" y="23.5" width="50" height="35"/>
                                 <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="irG-pC-noz"/>
@@ -94,10 +94,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QDM-7e-Exy" firstAttribute="top" relation="lessThanOrEqual" secondItem="3Na-O2-Xv2" secondAttribute="bottom" constant="55" id="1Hu-Gs-GGS"/>
                             <constraint firstItem="Q7d-aP-A57" firstAttribute="top" relation="lessThanOrEqual" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="5" id="1Oe-2n-tL0"/>
-                            <constraint firstItem="SnK-tK-PDZ" firstAttribute="top" secondItem="7uL-8s-zvb" secondAttribute="bottom" constant="80" id="1b7-yk-CLc"/>
-                            <constraint firstItem="7uL-8s-zvb" firstAttribute="top" secondItem="QDM-7e-Exy" secondAttribute="bottom" constant="134" id="932-xu-fuC"/>
+                            <constraint firstItem="QDM-7e-Exy" firstAttribute="top" secondItem="3Na-O2-Xv2" secondAttribute="bottom" constant="30" id="8bR-fE-kmn"/>
+                            <constraint firstItem="7uL-8s-zvb" firstAttribute="top" secondItem="QDM-7e-Exy" secondAttribute="bottom" constant="100" id="932-xu-fuC"/>
                             <constraint firstItem="IQv-th-Us6" firstAttribute="top" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="10" id="JEs-BR-vPS"/>
                             <constraint firstItem="fzX-lA-Z6H" firstAttribute="leading" secondItem="mVj-vS-ofZ" secondAttribute="leading" id="JoE-jp-4HF"/>
                             <constraint firstItem="3Na-O2-Xv2" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="LHg-ef-tEu"/>
@@ -105,7 +104,7 @@
                             <constraint firstItem="Q7d-aP-A57" firstAttribute="baseline" secondItem="IQv-th-Us6" secondAttribute="firstBaseline" id="Z3u-2L-bfO"/>
                             <constraint firstItem="7uL-8s-zvb" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="aq6-Hr-p4W"/>
                             <constraint firstItem="QDM-7e-Exy" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="gdK-ps-GuM"/>
-                            <constraint firstItem="IQv-th-Us6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="mVj-vS-ofZ" secondAttribute="leadingMargin" id="nUX-gQ-0C8"/>
+                            <constraint firstItem="IQv-th-Us6" firstAttribute="leading" secondItem="mVj-vS-ofZ" secondAttribute="leadingMargin" id="nUX-gQ-0C8"/>
                             <constraint firstItem="fzX-lA-Z6H" firstAttribute="centerX" secondItem="mVj-vS-ofZ" secondAttribute="centerX" id="prL-2J-BFz"/>
                             <constraint firstItem="fzX-lA-Z6H" firstAttribute="top" secondItem="Q7d-aP-A57" secondAttribute="bottom" constant="55" id="qbE-8x-EE8"/>
                             <constraint firstItem="3Na-O2-Xv2" firstAttribute="top" secondItem="fzX-lA-Z6H" secondAttribute="bottom" constant="30" id="r23-zt-FsS"/>

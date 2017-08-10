@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import Fabric
+import Crashlytics
 
 class Question2ViewController: UIViewController {
     var realDevices2: JSON = []

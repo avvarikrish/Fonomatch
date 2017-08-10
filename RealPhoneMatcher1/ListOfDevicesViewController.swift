@@ -10,6 +10,8 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 import MGSwipeTableCell
+import Fabric
+import Crashlytics
 
 class ListOfDevicesTableViewController : UITableViewController {
     var deviceLabel: String = ""
@@ -33,7 +35,6 @@ class ListOfDevicesTableViewController : UITableViewController {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
         let blue = CGFloat(rgbValue & 0xFF)/256.0
-        
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -42,7 +43,7 @@ class ListOfDevicesTableViewController : UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MGSwipeTableCell
         cell.textLabel?.textColor = UIColor.orange
         cell.textLabel!.text = realDevices6[indexPath.row]["DeviceName"].stringValue
-        cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"rsz_amazon-logo_white"), backgroundColor: .white) { (sender: MGSwipeTableCell!) -> Bool in
+        cell.leftButtons = [MGSwipeButton(title: "", icon: UIImage(named:"amazonView"), backgroundColor: .black) { (sender: MGSwipeTableCell!) -> Bool in
             let amazonDevice = self.realDevices6[indexPath.row]["DeviceName"].stringValue
             var amazonDeviceArray = amazonDevice.components(separatedBy: " ")
             var realAmazonDeviceArray = ""
@@ -52,7 +53,8 @@ class ListOfDevicesTableViewController : UITableViewController {
             UIApplication.shared.openURL(NSURL(string: "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=\(realAmazonDeviceArray)")! as URL)
             return true}]
         if( indexPath.row % 2 == 0){
-            cell.backgroundColor=UIColorFromHex(rgbValue: 0x3B728C);
+            //cell.backgroundColor=UIColorFromHex(rgbValue: 0x3B728C);
+            cell.backgroundColor=UIColorFromHex(rgbValue: 0x36687F)
         }
         else{
             cell.backgroundColor = UIColorFromHex(rgbValue: 0x36687F)

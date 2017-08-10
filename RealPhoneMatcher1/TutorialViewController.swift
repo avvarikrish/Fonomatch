@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Fabric
 import Crashlytics
 
 class tutorialViewController: UIViewController {

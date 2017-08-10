@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 class TestViewController: UIViewController {
     @IBOutlet weak var testLabel: UILabel!

@@ -9,7 +9,8 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
-
+import Fabric
+import Crashlytics
 
 class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     @IBOutlet weak var continue0Button: UIButton!

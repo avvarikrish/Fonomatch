@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import Fabric
+import Crashlytics
 
 class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     var userDateSelected = String()

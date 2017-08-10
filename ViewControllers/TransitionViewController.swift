@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyJSON
+import Fabric
+import Crashlytics
 
 class TransitionViewController: UIViewController {
     var realDevices5 : [JSON] = []

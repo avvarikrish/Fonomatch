@@ -9,6 +9,9 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import Fabric
+import Crashlytics
+
 class Question4TalkTimeViewController: UIViewController {
     var userTalkTimeValue = ""
     var talkTimeValue = ""
