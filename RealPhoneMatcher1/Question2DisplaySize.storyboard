@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-gi-Irz">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="Y0r-gi-Irz">
                                 <rect key="frame" x="128.5" y="207" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="fJN-DQ-QLf"/>
@@ -31,7 +31,7 @@
                                     <action selector="displayMaxSizeSlider:" destination="Yaz-fa-Jz9" eventType="valueChanged" id="R2w-Pu-SaV"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 inches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-nh-pVt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 inches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-nh-pVt">
                                 <rect key="frame" x="233" y="308" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,7 +49,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 inches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-hd-7Me">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 inches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-hd-7Me">
                                 <rect key="frame" x="75" y="308" width="79" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="79" id="9oq-rw-2Qo"/>
@@ -59,29 +59,44 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-dY-FF7">
-                                <rect key="frame" x="307" y="30" width="42" height="35"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-dY-FF7">
+                                <rect key="frame" x="299" y="30" width="50" height="35"/>
+                                <color key="backgroundColor" red="0.26477906109999999" green="0.48141694070000002" blue="0.57128602269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Xl9-3f-SdQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="wGv-Z1-j11"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
-                                <state key="normal" title="View">
-                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="View">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="19" name=".AppleSystemUIFontEmphasized"/>
+                                                <font key="NSOriginalFont" size="19" name=".AppleSystemUIFontEmphasized"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="viewDevices1:" destination="Yaz-fa-Jz9" eventType="touchUpInside" id="6Nk-j0-Euc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-sU-qdW">
-                                <rect key="frame" x="112.5" y="379" width="150" height="32"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-sU-qdW">
+                                <rect key="frame" x="112.5" y="379" width="150" height="31"/>
+                                <color key="backgroundColor" red="0.26477906109999999" green="0.48141694070000002" blue="0.57128602269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="9TH-af-Eeb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Continue">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name=".AppleSystemUIFontEmphasized"/>
+                                                <font key="NSOriginalFont" size="16" name=".AppleSystemUIFontEmphasized"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="continue2DisplaySize:" destination="Yaz-fa-Jz9" eventType="touchUpInside" id="21b-UA-tDo"/>
@@ -107,7 +122,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="Iv8-Ei-O8W">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="13" translatesAutoresizingMaskIntoConstraints="NO" id="Iv8-Ei-O8W">
                                 <rect key="frame" x="128.5" y="151" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="bLa-DJ-JoN"/>
@@ -117,7 +132,7 @@
                                 </connections>
                             </slider>
                         </subviews>
-                        <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21048927310000001" green="0.4063334763" blue="0.499828577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ywh-8g-Fl0" firstAttribute="leading" secondItem="EDg-hd-7Me" secondAttribute="trailing" constant="8" id="3gO-Lu-iDl"/>
                             <constraint firstItem="qFI-vR-y6j" firstAttribute="leading" secondItem="wY3-8h-lg5" secondAttribute="leading" constant="20" symbolic="YES" id="ENn-oO-1gR"/>

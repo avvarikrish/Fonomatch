@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newappicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4M-Wp-aQC">
-                                <rect key="frame" x="87" y="250" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RealAppStoreIcon2.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4M-Wp-aQC">
+                                <rect key="frame" x="60" y="250" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="jh8-FQ-WOM"/>
                                     <constraint firstAttribute="width" constant="200" id="owP-rC-VEQ"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Fonomatch" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UWt-1g-9KG">
-                                <rect key="frame" x="87" y="120" width="200" height="100"/>
+                                <rect key="frame" x="60" y="120" width="200" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7ks-ma-TKb"/>
@@ -38,12 +39,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2017 Krish Avvari. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oo-Vg-08S">
+                                <rect key="frame" x="16" y="466" width="288" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="b4M-Wp-aQC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="N0b-CX-Sza"/>
                             <constraint firstItem="UWt-1g-9KG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NiC-dv-9Nw"/>
+                            <constraint firstItem="8oo-Vg-08S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="koG-om-3CW"/>
+                            <constraint firstItem="8oo-Vg-08S" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="nUe-84-cNk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8oo-Vg-08S" secondAttribute="trailing" id="pDv-g2-MaY"/>
                             <constraint firstItem="b4M-Wp-aQC" firstAttribute="top" secondItem="UWt-1g-9KG" secondAttribute="bottom" constant="30" id="rdu-Wg-bZ7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="8oo-Vg-08S" secondAttribute="bottom" id="s4R-b4-bhc"/>
                             <constraint firstItem="UWt-1g-9KG" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="tah-9L-wdc"/>
                         </constraints>
                     </view>
@@ -54,6 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="newappicon.png" width="403" height="403"/>
+        <image name="RealAppStoreIcon2.png" width="1024" height="1024"/>
     </resources>
 </document>

@@ -19,13 +19,11 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     var realDevices: JSON = []
     @IBOutlet weak var question1TextBox: UITextField!
     @IBOutlet weak var question1DropDown: UIPickerView!
-    var list: [String] = ["Acer", "Alcatel", "Allview", "Apple", "Archos", "Asus", "Blackberry", "Blu", "BQ", "Celkon", "Coolpad", "Dell", "Energizer", "Garmin", "Google", "HP", "HTC", "Huawei", "I-Mobile", "IceMobile", "Intex", "Jolla", "Karbonn", "Kyocera", "Lava", "Leeco", "Lenovo", "LG", "Maxwest", "Meizu", "Micromax", "Microsoft", "Modu", "Motorola", "Nec", "NIU", "Nokia", "Nvidia", "Oneplus", "Oppo", "Orange", "Palm", "Panasonic", "Pantech", "Parla", "Plum", "Posh", "Prestigio", "Qmobile", "Samsung", "Sharp", "Sonim", "Sony", "Spice", "Toshiba", "Unnecto", "Vertu", "Vivo", "Vodafone", "Wiko", "Xiaomi", "Xolo", "Yezz", "Yota", "Yu", "ZTE"]
-    
+    var list: [String] = ["Apple"]
     override func viewDidLoad() {
         super.viewDidLoad()
         continue0Button.layer.cornerRadius=5
-        self.question1DropDown.isHidden = true
-        question1TextView.text = "Select a brand"
+        question1TextView.text = "Sample Question Page"
         question1TextView.isUserInteractionEnabled = false
         self.isEditing = false
     }
@@ -78,14 +76,14 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     }
     
     @IBAction func continue1Button(_ sender: UIButton) {
-        let apiToContact = "https://fonoapi.freshpixl.com/v1/getlatest?brand=" + valueSelected + "&token=fa3b068e2b9e81df7efa3295e02220ce66bec14716e21839"
+        let apiToContact = "https://fonoapi.freshpixl.com/v1/getlatest?brand=apple&token=fa3b068e2b9e81df7efa3295e02220ce66bec14716e21839"
         Alamofire.request(apiToContact).validate().responseJSON() { response in
             switch response.result {
             case .success:
                 if let value = response.result.value {
                     let json = JSON(value)
                     self.realDevices = json[]
-                    self.performSegue(withIdentifier: "segueToSize", sender: self)
+                    self.performSegue(withIdentifier: "segueToDevice", sender: self)
                 }
             case .failure (let error):
                 var allarme = UIAlertView(title: "Error", message: "Something went wrong with the internet. Please try again later.", delegate: self, cancelButtonTitle: "OK")
@@ -93,13 +91,12 @@ class Question1ViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 print (error)
             }
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToSize" {
-            if let secondViewController = segue.destination as? Question2ViewController {
-                secondViewController.realDevices2 = self.realDevices
+        if segue.identifier == "segueToDevice" {
+            if let secondViewController = segue.destination as? RealQuestion2 {
+                secondViewController.realDevices0 = self.realDevices
             }
         }
     }

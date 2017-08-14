@@ -30,7 +30,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTm-bV-1WD">
                                                 <rect key="frame" x="170.5" y="35" width="34" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zM-xu-sf4">
@@ -82,7 +82,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.21048927310000001" green="0.4063334763" blue="0.499828577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="7oO-WW-6MQ" firstAttribute="top" secondItem="RgZ-le-qiH" secondAttribute="bottom" constant="20" id="0Jv-o7-t4u"/>
                                             <constraint firstItem="RNB-AW-RYe" firstAttribute="leading" secondItem="rNg-4S-DhN" secondAttribute="leading" id="1k2-Bg-8fg"/>
@@ -113,6 +113,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.21048927310000001" green="0.4063334763" blue="0.499828577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="rNg-4S-DhN" secondAttribute="trailing" id="2ue-qW-gX0"/>
                                     <constraint firstItem="rNg-4S-DhN" firstAttribute="top" secondItem="3Hy-vj-zPz" secondAttribute="top" id="EMk-Mr-hJ0"/>
@@ -121,7 +122,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21048927310000001" green="0.4063334763" blue="0.499828577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3Hy-vj-zPz" secondAttribute="trailing" id="Bf5-50-M0l"/>
                             <constraint firstItem="3Hy-vj-zPz" firstAttribute="leading" secondItem="zy4-FH-SSC" secondAttribute="leading" id="Kiu-NZ-Q5j"/>

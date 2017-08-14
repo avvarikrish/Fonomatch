@@ -53,16 +53,23 @@
                                     <action selector="talkTimeActionSlider:" destination="AlL-GN-73I" eventType="valueChanged" id="t4r-H4-IQn"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-8s-zvb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-8s-zvb">
                                 <rect key="frame" x="112.5" y="355.5" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.26477906109999999" green="0.48141694070000002" blue="0.57128602269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="FRP-KR-KsJ"/>
                                     <constraint firstAttribute="height" constant="30" id="ex3-wP-B47"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Continue">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name=".AppleSystemUIFontEmphasized"/>
+                                                <font key="NSOriginalFont" size="16" name=".AppleSystemUIFontEmphasized"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="continue4Button:" destination="AlL-GN-73I" eventType="touchUpInside" id="JYs-2k-pcN"/>
@@ -77,22 +84,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-aP-A57">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-aP-A57">
                                 <rect key="frame" x="299" y="23.5" width="50" height="35"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.26477906109999999" green="0.48141694070000002" blue="0.57128602269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="irG-pC-noz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
-                                <state key="normal" title="View">
-                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="View">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="19" name=".AppleSystemUIFontEmphasized"/>
+                                                <font key="NSOriginalFont" size="19" name=".AppleSystemUIFontEmphasized"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="view3AllDevices:" destination="AlL-GN-73I" eventType="touchUpInside" id="D5k-p1-DSf"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21048927310000001" green="0.4063334763" blue="0.499828577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Q7d-aP-A57" firstAttribute="top" relation="lessThanOrEqual" secondItem="hsG-sJ-cOr" secondAttribute="bottom" constant="5" id="1Oe-2n-tL0"/>
                             <constraint firstItem="QDM-7e-Exy" firstAttribute="top" secondItem="3Na-O2-Xv2" secondAttribute="bottom" constant="30" id="8bR-fE-kmn"/>

@@ -21,88 +21,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu1-Lt-7Ip">
-                                <rect key="frame" x="85" y="426" width="150" height="33"/>
-                                <color key="backgroundColor" red="0.23137254901960785" green="0.44705882352941173" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iu1-Lt-7Ip">
+                                <rect key="frame" x="85" y="445" width="150" height="33"/>
+                                <color key="backgroundColor" red="0.26477906109999999" green="0.48141694070000002" blue="0.57128602269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="VqQ-PF-LMs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Continue">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                <font key="NSOriginalFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="continue1Button:" destination="r5G-lC-PTK" eventType="touchUpInside" id="Qk7-a8-2OR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brand Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2N-CC-oKN">
-                                <rect key="frame" x="109.5" y="164" width="101" height="30"/>
-                                <color key="backgroundColor" red="0.2901960784" green="0.46666666670000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="r5G-lC-PTK" id="rHv-kQ-QrF"/>
-                                </connections>
-                            </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eya-xj-Uh5">
-                                <rect key="frame" x="0.0" y="194" width="320" height="216"/>
-                                <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-bt-Msg">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
-                                        <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="117" id="GHU-tp-pfC"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="dataSource" destination="r5G-lC-PTK" id="lzB-BP-B5A"/>
-                                            <outlet property="delegate" destination="r5G-lC-PTK" id="bwz-Pt-odG"/>
-                                        </connections>
-                                    </pickerView>
-                                </subviews>
-                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xwd-8a-dAF">
-                                <rect key="frame" x="85" y="99" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="35" y="94" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.21048927310000001" green="0.4063334763" blue="0.499828577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="kF5-co-UFS"/>
+                                    <constraint firstAttribute="width" constant="250" id="kF5-co-UFS"/>
                                     <constraint firstAttribute="height" constant="30" id="u8o-sH-WW5"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallTutorial3.png" translatesAutoresizingMaskIntoConstraints="NO" id="jK3-fg-Eqe">
+                                <rect key="frame" x="40" y="144" width="240" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BLz-jJ-h8x"/>
+                                    <constraint firstAttribute="height" constant="280" id="yEP-xj-Cx0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.21176470589999999" green="0.40784313729999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21176470588235294" green="0.40784313725490196" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eya-xj-Uh5" firstAttribute="leading" secondItem="ZgW-pX-lnp" secondAttribute="leading" id="4NZ-IE-kgX"/>
                             <constraint firstItem="iu1-Lt-7Ip" firstAttribute="centerX" secondItem="ZgW-pX-lnp" secondAttribute="centerX" id="4Ou-il-Jbs"/>
-                            <constraint firstItem="f2N-CC-oKN" firstAttribute="top" secondItem="xwd-8a-dAF" secondAttribute="bottom" constant="35" id="6Kr-vr-fMW"/>
                             <constraint firstItem="xwd-8a-dAF" firstAttribute="centerX" secondItem="ZgW-pX-lnp" secondAttribute="centerX" id="848-BQ-ecU"/>
-                            <constraint firstAttribute="trailing" secondItem="eya-xj-Uh5" secondAttribute="trailing" id="OWR-J7-RO2"/>
-                            <constraint firstItem="f2N-CC-oKN" firstAttribute="centerX" secondItem="ZgW-pX-lnp" secondAttribute="centerX" id="YBD-zI-dav"/>
-                            <constraint firstItem="xwd-8a-dAF" firstAttribute="top" secondItem="5Tm-7S-0Dr" secondAttribute="bottom" constant="35" id="eMm-dM-4GS"/>
-                            <constraint firstItem="iu1-Lt-7Ip" firstAttribute="top" secondItem="f2N-CC-oKN" secondAttribute="bottom" constant="232" id="gJL-vX-WO9"/>
-                            <constraint firstItem="eya-xj-Uh5" firstAttribute="top" secondItem="f2N-CC-oKN" secondAttribute="bottom" id="tk1-EZ-1Cv"/>
+                            <constraint firstItem="jK3-fg-Eqe" firstAttribute="top" secondItem="xwd-8a-dAF" secondAttribute="bottom" constant="20" id="Nr2-OP-noV"/>
+                            <constraint firstItem="jK3-fg-Eqe" firstAttribute="centerX" secondItem="ZgW-pX-lnp" secondAttribute="centerX" id="bHR-qC-cfI"/>
+                            <constraint firstItem="xwd-8a-dAF" firstAttribute="top" secondItem="5Tm-7S-0Dr" secondAttribute="bottom" constant="30" id="eMm-dM-4GS"/>
+                            <constraint firstItem="02n-E9-Bb3" firstAttribute="top" secondItem="iu1-Lt-7Ip" secondAttribute="bottom" constant="90" id="gkO-gw-0W5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xkh-ks-5c4"/>
                     <connections>
                         <outlet property="continue0Button" destination="iu1-Lt-7Ip" id="nr9-Xt-egF"/>
-                        <outlet property="question1DropDown" destination="GFZ-bt-Msg" id="zc0-Do-0dV"/>
-                        <outlet property="question1TextBox" destination="f2N-CC-oKN" id="vgD-f2-CYd"/>
                         <outlet property="question1TextView" destination="xwd-8a-dAF" id="5j8-hG-SKI"/>
-                        <segue destination="82E-OA-hUj" kind="show" identifier="segueToSize" id="jWn-hC-eBV"/>
+                        <segue destination="82E-OA-hUj" kind="show" identifier="segueToDevice" id="jWn-hC-eBV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voa-IE-b4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5115" y="138.38028169014083"/>
         </scene>
-        <!--Question2DisplaySize-->
+        <!--RealQuestion2-->
         <scene sceneID="xrd-5d-61H">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Question2DisplaySize" storyboardName="Question2DisplaySize" id="82E-OA-hUj" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Question2DisplaySize" storyboardName="RealQuestion2" id="82E-OA-hUj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NP6-rl-gth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5780" y="163"/>
@@ -126,4 +109,7 @@
             <point key="canvasLocation" x="4176.8000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smallTutorial3.png" width="1024" height="1024"/>
+    </resources>
 </document>

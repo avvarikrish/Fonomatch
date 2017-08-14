@@ -25,6 +25,7 @@ class ListOfDevicesTableViewController : UITableViewController {
     var talkTimeLabel = ""
     var sizeLabel = ""
     var realDevices6: [JSON] = []
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet var swipeToView: UISwipeGestureRecognizer!
     @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {
     }

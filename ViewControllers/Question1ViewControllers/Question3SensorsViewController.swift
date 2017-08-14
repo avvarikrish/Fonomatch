@@ -30,7 +30,7 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
         super.viewDidLoad()
         view2Button.layer.cornerRadius=5
         continue2Button.layer.cornerRadius=5
-        self.datePickerView.isHidden = true
+        self.datePickerView.isHidden = false
         if realDevices3.count == 1 {
             matchingDevices2.text = "You match:  " + String (realDevices3.count) + " device"
         } else {
@@ -96,6 +96,9 @@ class Question3DatesViewController: UIViewController, UIPickerViewDelegate, UIPi
         if segue.identifier == "segueToTalkTime" {
             if let fourthViewController = segue.destination as? Question4TalkTimeViewController {
                 for device in realDevices3 {
+                    if userDateSelected == "" {
+                        userDateSelected = "2005"
+                    }
                     releaseValue = device["status"].stringValue
                     if releaseValue != "Discontinued" && releaseValue != "Rumored" && releaseValue != "Cancelled" && releaseValue != "Available" {
                         releaseDateDevicesArray = releaseValue.components(separatedBy: " ")

@@ -13,9 +13,10 @@ import Fabric
 import Crashlytics
 
 class Question2ViewController: UIViewController {
-    var realDevices2: JSON = []
+    var realDevices2: [JSON] = []
     var userSizeValue: String = ""
     var userMaxSizeValue = ""
+    var vcDevices: [JSON] = []
     var sizeDevicesArray: [String] = []
     @IBOutlet weak var sliderLabel: UILabel!
     @IBOutlet weak var view1Button: UIButton!
@@ -83,21 +84,22 @@ class Question2ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToDates" {
             if let thirdViewController = segue.destination as? Question3DatesViewController {
-                for device in realDevices2.arrayValue {
+                for device in realDevices2 {
                     let sizeValue = device[]["size"].stringValue
                     sizeDevicesArray = sizeValue.components(separatedBy: " ")
                     if Double(sizeDevicesArray[0]) != nil {
                         if Double(userSizeValue)! <= Double(sizeDevicesArray[0])! && Double(userMaxSizeValue)! >= Double(sizeDevicesArray[0])! {
-                            thirdViewController.realDevices3.append(device[])
+                            thirdViewController.realDevices3.append(device)
                         }
                     }
                 }
+                vcDevices = thirdViewController.realDevices3
             }
         }
         if segue.identifier == "segueToList" {
             if let finalViewController = segue.destination as? TransitionViewController {
-                for device in realDevices2.arrayValue {
-                    finalViewController.realDevices5.append(device[])
+                for device in realDevices2 {
+                    finalViewController.realDevices5.append(device)
                 }
             }
         }
